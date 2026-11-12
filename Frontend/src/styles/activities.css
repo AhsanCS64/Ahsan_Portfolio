@@ -1,0 +1,459 @@
+.achievements-page,
+.eca-page {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 92% 8%, rgba(151, 177, 129, 0.16), transparent 34%),
+    linear-gradient(155deg, #F0F1E9 0%, #E9EDE2 52%, #E4EADE 100%);
+}
+
+.achievements-page .page-wrap,
+.eca-page .page-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.achievements-page .page-intro,
+.eca-page .page-intro {
+  max-width: none;
+  padding-bottom: clamp(32px, 5vw, 58px);
+  border-color: rgba(24, 65, 42, 0.24);
+}
+
+.achievements-page .page-intro h1,
+.eca-page .page-intro h1 {
+  color: #193E2B;
+  text-wrap: balance;
+}
+
+.achievements-page .page-intro h1 em,
+.eca-page .page-intro h1 em {
+  color: #66866B;
+}
+
+.achievements-page .page-intro p,
+.eca-page .page-intro p {
+  color: #627365;
+}
+
+.activities-section-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  color: #68806B;
+  font-family: var(--mono);
+  font-size: 8px;
+  letter-spacing: 0.13em;
+}
+
+.activities-section-label span:last-child {
+  color: #849184;
+  text-align: right;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.achievement-card {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  min-width: 0;
+  min-height: 285px;
+  flex-direction: column;
+  overflow: hidden;
+  padding: clamp(18px, 2.5vw, 27px);
+  border: 1px solid rgba(24, 65, 42, 0.16);
+  background:
+    radial-gradient(ellipse at 100% 0%, rgba(194, 216, 181, 0.42), transparent 48%),
+    rgba(248, 249, 244, 0.66);
+  box-shadow: 0 14px 36px rgba(9, 45, 32, 0.055);
+}
+
+.achievement-card > :not(.achievement-card__logo):not(.achievement-card__watermark) {
+  position: relative;
+  z-index: 1;
+}
+
+.achievement-card__logo {
+  position: absolute;
+  z-index: 1;
+  top: 54px;
+  right: 22px;
+  display: grid;
+  width: 112px;
+  height: 112px;
+  place-items: center;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at 30% 20%, #fff 0%, rgba(255, 255, 255, 0.92) 58%, rgba(238, 244, 232, 0.9) 100%);
+  box-shadow:
+    0 12px 28px rgba(9, 45, 32, 0.11),
+    inset 0 0 0 1px rgba(24, 65, 42, 0.06);
+  pointer-events: none;
+}
+
+.achievement-card__logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.achievement-card__logo--large {
+  width: 126px;
+  height: 115px;
+  padding: 11px;
+}
+
+.achievement-card__mark {
+  position: absolute;
+  z-index: 1;
+  top: 54px;
+  right: 22px;
+  display: grid;
+  width: 112px;
+  height: 112px;
+  place-items: center;
+  border: 1px solid rgba(24, 65, 42, 0.1);
+  border-radius: 26px;
+  color: #315D41;
+  background: linear-gradient(145deg, #fff, #f3f6ee);
+  box-shadow: 0 12px 28px rgba(9, 45, 32, 0.08);
+  font-family: var(--display);
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -0.1em;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.achievement-card__topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #7A8978;
+  font-family: var(--mono);
+  font-size: 7px;
+  letter-spacing: 0.12em;
+}
+
+.achievement-card__topline span:last-child {
+  color: #AB9C70;
+  font-size: 16px;
+}
+
+.achievement-card__result {
+  margin: auto 0 10px;
+  color: #315D41;
+  font-family: var(--display);
+  font-size: clamp(34px, 4vw, 48px);
+  font-weight: 600;
+  letter-spacing: -0.075em;
+  line-height: 1;
+  overflow-wrap: anywhere;
+}
+
+.achievement-card h2 {
+  margin: 0 0 10px;
+  color: #193E2B;
+  font-family: var(--display);
+  font-size: clamp(17px, 2vw, 22px);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.25;
+}
+
+.achievement-card__context {
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid rgba(24, 65, 42, 0.14);
+  color: #64746A;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.achievement-card__context span {
+  display: block;
+  margin-top: 3px;
+  color: #80907E;
+  font-family: var(--mono);
+  font-size: 7px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.eca-timeline {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.eca-role {
+  display: grid;
+  grid-template-columns: 78px minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: clamp(16px, 3vw, 34px);
+  padding: clamp(18px, 2.8vw, 28px);
+  border: 1px solid rgba(24, 65, 42, 0.12);
+  border-radius: 22px;
+  background:
+    radial-gradient(ellipse at 0% 0%, rgba(208, 225, 198, 0.3), transparent 42%),
+    rgba(250, 251, 247, 0.74);
+  box-shadow: 0 12px 30px rgba(9, 45, 32, 0.045);
+}
+
+.eca-role__club-mark {
+  position: relative;
+  display: grid;
+  width: 76px;
+  height: 76px;
+  place-items: center;
+  border: 1px solid rgba(24, 65, 42, 0.1);
+  border-radius: 22px;
+  background: linear-gradient(145deg, #fff, #f3f6ee);
+  box-shadow: 0 8px 22px rgba(9, 45, 32, 0.08);
+}
+
+.eca-role__club-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  object-fit: contain;
+}
+
+.eca-role__club-mark > span {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+  display: grid;
+  width: 19px;
+  height: 19px;
+  place-items: center;
+  border: 1px solid rgba(242, 241, 232, 0.95);
+  border-radius: 50%;
+  color: var(--chalk);
+  background: #315D41;
+  font-family: var(--mono);
+  font-size: 7px;
+}
+
+.eca-role__identity {
+  min-width: 0;
+}
+
+.eca-role__number {
+  color: #829080;
+  font-family: var(--mono);
+  font-size: 7px;
+  letter-spacing: 0.13em;
+}
+
+.eca-role h2 {
+  margin: 12px 0 5px;
+  color: #193E2B;
+  font-family: var(--display);
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 600;
+  letter-spacing: -0.06em;
+  line-height: 1.12;
+}
+
+.eca-role__organization {
+  display: inline-flex;
+  max-width: 100%;
+  align-items: center;
+  gap: 5px;
+  color: #527459;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.eca-role__organization:hover {
+  color: #24583A;
+}
+
+.eca-role__organization .arrow-icon {
+  width: 13px;
+  height: 13px;
+}
+
+.eca-role__organization:focus-visible {
+  border-radius: 2px;
+}
+
+.eca-role__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-top: 15px;
+  color: #758176;
+  font-family: var(--mono);
+  font-size: 8px;
+  line-height: 1.6;
+}
+
+.eca-role__responsibilities {
+  display: grid;
+  align-content: center;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  color: #596E5D;
+  font-size: 11px;
+  line-height: 1.75;
+  list-style: none;
+}
+
+.eca-role__responsibilities li {
+  position: relative;
+  padding-left: 22px;
+}
+
+.eca-role__responsibilities li::before {
+  position: absolute;
+  top: 0.45em;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #789779;
+  border-radius: 50%;
+  content: "";
+}
+
+.achievements-page .page-end-link,
+.eca-page .page-end-link {
+  margin-top: 42px;
+}
+
+@media (max-width: 800px) {
+  .eca-role {
+    grid-template-columns: 66px minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 16px;
+  }
+
+  .eca-role__club-mark {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media (max-width: 700px) {
+  .achievements-page .page-intro h1,
+  .eca-page .page-intro h1 {
+    font-size: clamp(41px, 10.5vw, 60px);
+  }
+
+  .achievement-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .achievement-card {
+    min-height: 220px;
+    padding: 22px;
+  }
+
+  .achievement-card__logo {
+    top: 58px;
+    right: 16px;
+    width: 96px;
+    height: 96px;
+    padding: 10px;
+    border-radius: 22px;
+  }
+
+  .achievement-card__logo--large {
+    width: 108px;
+    height: 108px;
+    padding: 9px;
+  }
+
+  .achievement-card__mark {
+    top: 58px;
+    right: 16px;
+    width: 96px;
+    height: 96px;
+    border-radius: 22px;
+    font-size: 38px;
+  }
+
+  .achievement-card__result {
+    font-size: 42px;
+  }
+
+  .achievement-card h2 {
+    font-size: 21px;
+  }
+
+  .eca-role {
+    grid-template-columns: 54px minmax(0, 1fr);
+    align-items: center;
+    gap: 12px 15px;
+    padding-block: 22px;
+  }
+
+  .eca-role__club-mark {
+    width: 54px;
+    height: 54px;
+    grid-row: 1;
+    border-radius: 17px;
+  }
+
+  .eca-role__club-mark img {
+    padding: 5px;
+  }
+
+  .eca-role__identity {
+    grid-row: 1;
+  }
+
+  .eca-role__responsibilities {
+    grid-column: 2;
+  }
+
+  .eca-role h2 {
+    margin-top: 9px;
+    font-size: 25px;
+  }
+
+  .eca-role__meta {
+    margin-top: 10px;
+  }
+
+  .eca-role__responsibilities {
+    gap: 8px;
+    font-size: 10px;
+  }
+
+  .eca-role {
+    grid-template-columns: 54px minmax(0, 1fr);
+    padding: 18px 15px;
+    border-radius: 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .activities-section-label {
+    font-size: 7px;
+    letter-spacing: 0.09em;
+  }
+
+  .eca-role__meta {
+    flex-direction: column;
+    gap: 3px;
+  }
+}

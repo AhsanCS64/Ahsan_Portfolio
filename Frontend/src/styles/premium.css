@@ -405,12 +405,12 @@ body {
 
 .home-hero__identity {
   display: flex;
-  width: min(100%, 520px);
-  min-height: 68px;
+  width: min(100%, 600px);
+  min-height: 88px;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
   margin: -7px 0 23px;
-  padding: 8px 11px 8px 8px;
+  padding: 11px 15px 11px 11px;
   border: 1px solid rgba(208, 227, 194, 0.2);
   background: linear-gradient(100deg, rgba(225, 238, 210, 0.1), rgba(225, 238, 210, 0.025));
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.045);
@@ -418,8 +418,8 @@ body {
 }
 
 .home-hero__identity > img {
-  width: 49px;
-  height: 49px;
+  width: 62px;
+  height: 62px;
   flex: 0 0 auto;
   border: 1px solid rgba(222, 237, 204, 0.64);
   object-fit: cover;
@@ -429,13 +429,13 @@ body {
 .home-hero__identity-copy {
   display: grid;
   min-width: 0;
-  gap: 3px;
+  gap: 5px;
 }
 
 .home-hero__identity-copy strong {
   color: #F2F1E8;
   font-family: var(--display);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.035em;
   line-height: 1.15;
@@ -443,7 +443,7 @@ body {
 
 .home-hero__identity-copy span {
   color: rgba(221, 232, 210, 0.75);
-  font-size: 8px;
+  font-size: 10px;
   line-height: 1.35;
 }
 
@@ -453,11 +453,11 @@ body {
 
 .home-hero__identity-index {
   margin-left: auto;
-  padding-left: 10px;
+  padding-left: 13px;
   border-left: 1px solid rgba(208, 227, 194, 0.18);
   color: rgba(225, 235, 211, 0.55);
   font-family: var(--mono);
-  font-size: 6px;
+  font-size: 7px;
   letter-spacing: 0.1em;
   line-height: 1.7;
   text-align: right;
@@ -752,7 +752,7 @@ body {
   background: rgba(194, 216, 181, 0.06);
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1180px) {
   .site-header {
     top: 8px;
     width: calc(100% - 32px);
@@ -831,11 +831,15 @@ body {
     flex-direction: column;
     gap: 4px;
     padding: 12px;
+    max-height: calc(100vh - 100px);
+    max-height: calc(100dvh - 100px);
     border: 1px solid rgba(203, 222, 185, 0.2);
     border-radius: 19px;
     background: linear-gradient(155deg, rgba(14, 53, 37, 0.98), rgba(6, 32, 24, 0.98));
     box-shadow: 0 22px 60px rgba(2, 20, 13, 0.27);
     backdrop-filter: blur(20px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
 
   .primary-navigation__spotlight {
@@ -952,27 +956,27 @@ body {
   }
 
   .home-hero__identity {
-    gap: 9px;
-    margin-bottom: 20px;
-    padding: 7px;
+    gap: 10px;
+    margin-bottom: 22px;
+    padding: 9px;
   }
 
   .home-hero__identity > img {
-    width: 43px;
-    height: 43px;
+    width: 49px;
+    height: 49px;
   }
 
   .home-hero__identity-copy strong {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .home-hero__identity-copy span {
-    font-size: 7px;
+    font-size: 8px;
   }
 
   .home-hero__identity-index {
-    padding-left: 7px;
-    font-size: 5px;
+    padding-left: 8px;
+    font-size: 6px;
   }
 
   .home-hero__copy {

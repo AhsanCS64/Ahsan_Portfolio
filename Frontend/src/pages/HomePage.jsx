@@ -77,7 +77,7 @@ export default function HomePage() {
             }}
           >
             <motion.p className="eyebrow home-hero__eyebrow" variants={revealText}>
-              <span className="status-dot" /> SOFTWARE · INTELLIGENCE · RESEARCH
+              <span className="status-dot" /> MACHINE LEARNING · DEEP LEARNING · ARTIFICIAL INTELLIGENCE · SOFTWARE · RESEARCH
             </motion.p>
             <motion.div className="home-hero__identity" variants={revealText}>
               <img src={portraitUrl} alt="" />

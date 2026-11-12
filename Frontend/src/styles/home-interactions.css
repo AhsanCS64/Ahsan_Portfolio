@@ -61,6 +61,11 @@
   aspect-ratio: 2.16 / 1;
 }
 
+.project-gallery--medical .project-gallery__stage,
+.project-gallery--research .project-gallery__stage {
+  aspect-ratio: 2.15 / 1;
+}
+
 .project-gallery__image {
   position: absolute;
   inset: 0;
@@ -69,6 +74,11 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.project-gallery--medical .project-gallery__image,
+.project-gallery--research .project-gallery__image {
+  object-fit: contain;
 }
 
 .project-gallery__counter {

@@ -112,7 +112,7 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="eyebrow"><span className="contact-hero__status" />05 / OPEN CHANNEL · DHAKA, BD</p>
+            <p className="eyebrow"><span className="contact-hero__status" />08 / OPEN CHANNEL · DHAKA, BD</p>
             <h1>Start with<br /><em>a good question.</em></h1>
             <p className="contact-hero__lead">
               Have an idea, research question, or project in mind? I’m glad to

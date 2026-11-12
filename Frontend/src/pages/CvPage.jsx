@@ -17,7 +17,7 @@ export default function CvPage() {
     <div className="inner-page cv-page">
       <div className="page-wrap">
         <PageIntro
-          number="04"
+          number="05"
           eyebrow="Curriculum vitae"
           title={<>The details,<br /><em>in your preferred format.</em></>}
           copy="Choose a version to load its preview, open it in a new tab, or explicitly download the PDF below."

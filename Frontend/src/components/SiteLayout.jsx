@@ -47,12 +47,15 @@ export default function SiteLayout({ children }) {
         <Link className="wordmark" to="/" aria-label="Ahsan Habib, home">
           <span className="wordmark__mark" aria-hidden="true">
             <svg viewBox="0 0 32 32" fill="none">
-              <path d="M16 25V10m0 7c-5.8 0-9-3.1-9-8.5 5.7 0 9 2.8 9 8.5Zm0-3c0-5.7 3.2-9 9-9 0 5.8-3.2 9-9 9Z" />
+              <path d="M16 3 27 9v14l-11 6L5 23V9l11-6Z"/>
+<path d="m11 13 5-3 5 3v6l-5 3-5-3v-6Z"/>
+<path d="M16 3v7m11-1-6 4M27 23l-6-4M5 23l6-4M5 9l6 4"/>
+<circle cx="16" cy="16" r="2"/>
               <circle cx="16" cy="25" r="2" />
             </svg>
           </span>
           <span className="wordmark__copy">
-            <span className="wordmark__name">Ahsan</span>
+            <span className="wordmark__name">Ahsan.</span>
             <span className="wordmark__descriptor">SOFTWARE · AI · RESEARCH</span>
           </span>
         </Link>

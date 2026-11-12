@@ -35,6 +35,13 @@ body {
   background: var(--chalk);
 }
 
+@media (max-width: 320px) {
+  html,
+  body {
+    min-width: 0;
+  }
+}
+
 body,
 button,
 a {

@@ -10,8 +10,8 @@ export const skillDomains = [
     description:
       "Building an understanding of intelligent systems, from classical machine learning to modern deep-learning architectures.",
     skills: [
-      skill("Machine Learning", "Coursework + practice", "Andrew Ng's Machine Learning Specialization, model development and evaluation."),
-      skill("Deep Learning", "Coursework + practice", "Neural networks, optimization, regularization and deep-learning architectures."),
+      skill("Machine Learning", "Coursework + practice", "LightGBM, XGBoost, CatBoost, AdaBoost, SVM, KMeans, Random Forest, Decision Trees, Bagging and Boosting, t-SNE, HDBSCAN, PCA"),
+      skill("Deep Learning", "Coursework + Academic Research", "Neural networks, optimization, regularization, CNN, RNN, Attention Mechanism, Transoformers, and deep-learning architectures. Algorithms: Contrastive Learning, BanglaBERT, LSTM, BiLSTM, GRU, AlexNet, ResNet, VGG, ImageNet, GoogleNet, YOLO, etc."),
       skill("PyTorch", "Hands-on", "Model training, neural-network implementation, advanced architectures and deployment concepts."),
       skill("TensorFlow / Keras", "Coursework", "Deep-learning models and practical neural-network exercises."),
       skill("Transformers", "Hands-on learning", "Attention mechanisms, transformer architectures and pretrained language models."),

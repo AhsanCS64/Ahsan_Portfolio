@@ -9,6 +9,14 @@ import khamarbariHomeImage from "../../Photo/Projects/Khamarbari_home.png";
 import khamarbariDashboardImage from "../../Photo/Projects/khamarbari_dashboard.png";
 import khamarbariAnimalManagementImage from "../../Photo/Projects/Khamarbari_AnimalManagement.png";
 import khamarbariProductionsImage from "../../Photo/Projects/khamarbari_productions.png";
+import cmrxHomepageImage from "../../Photo/Projects/cmrx_homepage.png";
+import cmrxDashboardImage from "../../Photo/Projects/cmrx_dashboard.png";
+import cmrxPrescriptionsImage from "../../Photo/Projects/cmrx_viewPrescriptions.png";
+import nccLogo from "../../Photo/ECA/NCC.png";
+import nssLogo from "../../Photo/ECA/NSS.png";
+import dhakaUniversityLogo from "../../Photo/institutions/dhaka_university.png";
+import bubtLogo from "../../Photo/institutions/bubt.png";
+import dhakaBoardLogo from "../../Photo/institutions/dhaka_board.png";
 
 export const projects = [
   {
@@ -82,12 +90,109 @@ export const projects = [
       "Hospital and vaccination management",
       "Relational data model with generated medical IDs",
     ],
-    gallery: [],
-    galleryNote: "Project screenshots are being prepared and will appear here soon.",
+    gallery: [
+      {
+        image: cmrxHomepageImage,
+        alt: "CMRx homepage introducing the centralized medical-records and disease-tracking system",
+        title: "Centralized medical records",
+        explanation: "The public homepage introduces CMRx and its goal of connecting healthcare records across hospitals and clinics.",
+      },
+      {
+        image: cmrxDashboardImage,
+        alt: "CMRx patient dashboard with personal information, medical history, allergies, and vaccine records",
+        title: "A patient's medical history",
+        explanation: "The dashboard brings patient information, conditions, allergies, and vaccination records together in one view.",
+      },
+      {
+        image: cmrxPrescriptionsImage,
+        alt: "CMRx prescriptions page with a prescription record and view and download actions",
+        title: "Prescription records",
+        explanation: "Patients can review their prescription records and access the attached documents.",
+      },
+    ],
     stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
     href: "https://github.com/AhsanCS64/CMR-DT",
     linkLabel: "Source code",
     kind: "medical",
+  },
+];
+
+export const achievements = [
+  {
+    number: "01",
+    recognition: "2nd Highest CGPA",
+    title: "Department of Computer Science & Engineering",
+    context: "Faculty of Engineering and Technology · Dhaka University",
+    logo: dhakaUniversityLogo,
+    logoSize: "large",
+    markLabel: "NATIONAL INSTITUTE OF TEXTILE ENGINEERING AND RESEARCH",
+  },
+  {
+    number: "02",
+    recognition: "4th Place",
+    title: "National AI and Machine Learning Competition",
+    context: "Senior level · BUBT",
+    logo: bubtLogo,
+    markLabel: "Data Science Club",
+  },
+  {
+    number: "03",
+    recognition: "5th Position",
+    title: "NITER Innovate Hackathon",
+    context: "Intra-University · NITER",
+    logo: nccLogo,
+    markLabel: "NITER Computer Club",
+  },
+
+  {
+    number: "04",
+    recognition: "GPA 5.00",
+    title: "Higher Secondary Certificate (HSC)",
+    context: "Dhaka Board · Ministry Of Education, Bangladesh",
+    logo: dhakaBoardLogo,
+    markLabel: "Dhaka Education Board",
+  },
+];
+
+export const extracurricularRoles = [
+  {
+    number: "01",
+    role: "Organizing Secretary",
+    organization: "NITER Science Society",
+    organizationUrl: "https://www.linkedin.com/company/niter-science-society-nss/posts/",
+    logo: nssLogo,
+    period: "July 2026 – Present",
+    location: "Dhaka, Bangladesh",
+    responsibilities: [
+      "Organized inter-university quiz contests, seminars, and workshops.",
+      "Prepared questions and checked solutions.",
+    ],
+  },
+  {
+    number: "02",
+    role: "Deputy Treasurer",
+    organization: "NITER Computer Club",
+    organizationUrl: "https://www.linkedin.com/company/niter-computer-club-ncc/home/",
+    logo: nccLogo,
+    period: "Jan 2025 – Mar 2026",
+    location: "Dhaka, Bangladesh",
+    responsibilities: [
+      "Managed financial records, budgets, and sponsorship.",
+      "Collaborated with executive members on fund allocation.",
+    ],
+  },
+  {
+    number: "03",
+    role: "Senior Executive",
+    organization: "NITER Computer Club",
+    organizationUrl: "https://www.linkedin.com/company/niter-computer-club-ncc/home/",
+    logo: nccLogo,
+    period: "Jan 2024 – Dec 2025",
+    location: "Dhaka, Bangladesh",
+    responsibilities: [
+      "Organized inter-university programming contests and seminars.",
+      "Coordinated communication among club members.",
+    ],
   },
 ];
 
@@ -166,10 +271,12 @@ export const additionalLearning = [
 
 export const navItems = [
   { to: "/", label: "Home", end: true },
-  { to: "/work", label: "Work" },
+  { to: "/work", label: "Projects" },
   { to: "/about", label: "About" },
   { to: "/learning", label: "Learning" },
   { to: "/cv", label: "CV" },
+  { to: "/achievements", label: "Achievements" },
+  { to: "/eca", label: "ECA" },
   { to: "/contact", label: "Contact" },
 ];
 

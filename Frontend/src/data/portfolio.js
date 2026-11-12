@@ -22,7 +22,7 @@ export const projects = [
   {
     number: "01",
     type: "Full-stack · Web application",
-    name: "Khamar-Bari",
+    name: "Khamar Bari",
     summary:
       "A farm-management platform bringing everyday operations into one clear, interactive workspace.",
     details: [
@@ -61,28 +61,11 @@ export const projects = [
     repo: "https://github.com/AhsanCS64/KhamarBari_v2",
     kind: "farm",
   },
+
   {
     number: "02",
-    type: "Machine learning · Bangla NLP",
-    name: "HeadlineGuard BD",
-    summary:
-      "An experimental study of machine-learning approaches to identifying clickbait in Bangla headlines.",
-    details: [
-      "Compared TF-IDF, recurrent, and transformer approaches",
-      "Character n-gram TF-IDF + LinearSVC baseline",
-      "79.83% baseline accuracy · 77.86% macro F1",
-    ],
-    gallery: [],
-    galleryNote: "Research visuals and model comparisons are coming soon.",
-    stack: ["Python", "scikit-learn", "XGBoost", "BanglaBERT"],
-    href: "https://huggingface.co/datasets/Motahar/banglabait",
-    linkLabel: "Dataset",
-    kind: "research",
-  },
-  {
-    number: "03",
     type: "Database systems · Academic project",
-    name: "CMRX",
+    name: "CMR .x",
     summary:
       "A central medical-records and disease-tracking system built around structured healthcare information.",
     details: [
@@ -94,7 +77,7 @@ export const projects = [
       {
         image: cmrxHomepageImage,
         alt: "CMRx homepage introducing the centralized medical-records and disease-tracking system",
-        title: "Centralized medical records",
+        title: "Centralized medical Records and Disease Tracking",
         explanation: "The public homepage introduces CMRx and its goal of connecting healthcare records across hospitals and clinics.",
       },
       {
@@ -111,10 +94,33 @@ export const projects = [
       },
     ],
     stack: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
-    href: "https://github.com/AhsanCS64/CMR-DT",
+    repo: "https://github.com/AhsanCS64/CMR-DT",
     linkLabel: "Source code",
+    href: "https://cmrx.rf.gd/cmrx/Homepage.php",
+    linkLabel: "Live demo",
     kind: "medical",
   },
+
+
+  {
+    number: "03",
+    type: "Machine learning · Bangla NLP",
+    name: "HeadlineGuard BD",
+    summary:
+      "An experimental study of machine-learning approaches to identifying clickbait in Bangla headlines.",
+    details: [
+      "Compared TF-IDF, recurrent, and transformer approaches",
+      "Character n-gram TF-IDF + LinearSVC baseline",
+      "79.83% baseline accuracy · 77.86% macro F1",
+    ],
+    gallery: [],
+    galleryNote: "Research visuals and model comparisons are coming soon.",
+    stack: ["Python", "scikit-learn", "XGBoost", "BanglaBERT"],
+    href: "https://huggingface.co/datasets/Motahar/banglabait",
+    linkLabel: "Dataset",
+    kind: "research",
+  },
+  
 ];
 
 export const achievements = [

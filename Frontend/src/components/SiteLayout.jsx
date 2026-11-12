@@ -159,13 +159,13 @@ export default function SiteLayout({ children }) {
               </svg>
             </span>
             <span className="wordmark__copy">
-              <span className="wordmark__name">Ahsan</span>
+              <span className="wordmark__name">Ahsan.</span>
               <span className="wordmark__descriptor">SOFTWARE · AI · RESEARCH</span>
             </span>
           </Link>
           <p>Thoughtfully made, one iteration at a time.</p>
           <Link to="/contact">Contact <ArrowIcon diagonal /></Link>
-          <span>© {new Date().getFullYear()} H. M. Ahsan Habib Kushal</span>
+          <span>© {new Date().getFullYear()} H M AHSAN HABIB KUSHAL</span>
         </div>
       </footer>
     </div>

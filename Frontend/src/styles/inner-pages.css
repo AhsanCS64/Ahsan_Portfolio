@@ -1,0 +1,59 @@
+/* Inner pages */
+.inner-page {
+  padding-block: 92px 100px;
+  background: var(--chalk);
+}
+
+.page-intro {
+  position: relative;
+  max-width: 940px;
+  margin-bottom: 62px;
+  padding: 25px 0 32px 86px;
+  border-bottom: 1px solid var(--line);
+}
+
+.page-intro__number {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  color: var(--gold);
+  font-family: var(--display);
+  font-size: 43px;
+  font-weight: 500;
+  letter-spacing: -0.08em;
+}
+
+.page-intro .eyebrow {
+  margin-bottom: 17px;
+  color: #55725E;
+}
+
+.page-intro h1 {
+  margin: 0 0 19px;
+  font-family: var(--display);
+  font-size: clamp(52px, 7.5vw, 90px);
+  font-weight: 500;
+  letter-spacing: -0.085em;
+  line-height: 0.98;
+}
+
+.page-intro h1 em {
+  color: #64866B;
+}
+
+.page-intro__copy {
+  max-width: 540px;
+  margin: 0;
+  color: #5C6D61;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.page-intro__rule {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  width: 72px;
+  height: 3px;
+  background: var(--gold);
+}

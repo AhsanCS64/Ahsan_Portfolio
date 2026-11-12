@@ -1,0 +1,441 @@
+.atmosphere {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.atmosphere__grain {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(222, 237, 205, 0.18) 0.55px, transparent 0.7px);
+  background-size: 7px 7px;
+  opacity: 0.07;
+}
+
+.atmosphere__circuit {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.atmosphere__grid-line {
+  fill: none;
+  stroke: rgba(215, 232, 198, 0.16);
+  stroke-width: 0.6;
+}
+
+.atmosphere__trace {
+  fill: none;
+  stroke: rgba(206, 229, 188, 0.25);
+  stroke-width: 0.8;
+  stroke-dasharray: 2 9;
+  animation: circuit-flow 26s linear infinite;
+}
+
+.atmosphere__trace:nth-of-type(even) {
+  animation-direction: reverse;
+  animation-duration: 34s;
+}
+
+.atmosphere__node {
+  fill: rgba(217, 234, 195, 0.62);
+}
+
+.atmosphere__artifact-frame {
+  fill: rgba(10, 43, 30, 0.12);
+  stroke: rgba(215, 232, 198, 0.2);
+  stroke-width: 0.8;
+}
+
+.atmosphere__artifact-label {
+  fill: rgba(215, 232, 198, 0.45);
+  font-family: var(--mono);
+  font-size: 6px;
+  letter-spacing: 1.1px;
+}
+
+.atmosphere__artifact-rule {
+  stroke: rgba(215, 232, 198, 0.24);
+  stroke-width: 0.7;
+}
+
+.atmosphere__attention-cell {
+  fill: rgba(194, 216, 181, 0.1);
+  stroke: rgba(194, 216, 181, 0.17);
+  stroke-width: 0.5;
+  animation: attention-shimmer 5.6s ease-in-out infinite alternate;
+}
+
+.atmosphere__attention-cell:nth-of-type(3n) {
+  animation-delay: -2.2s;
+}
+
+.atmosphere__attention-cell.is-highlight {
+  fill: rgba(194, 216, 181, 0.42);
+}
+
+.atmosphere__neural-link,
+.atmosphere__embedding-path {
+  fill: none;
+  stroke: rgba(194, 216, 181, 0.27);
+  stroke-width: 0.8;
+}
+
+.atmosphere__neural-flow {
+  fill: none;
+  stroke: rgba(194, 216, 181, 0.68);
+  stroke-dasharray: 2 12;
+  stroke-width: 1;
+  animation: circuit-flow 12s linear infinite;
+}
+
+.atmosphere__neuron {
+  fill: #C2D8B5;
+  fill-opacity: 0.78;
+  stroke: rgba(9, 45, 32, 0.88);
+  stroke-width: 1.2;
+  animation: neuron-pulse 4.8s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.atmosphere__neuron:nth-of-type(3n) {
+  animation-delay: -1.7s;
+}
+
+.atmosphere__neuron.is-emphasis {
+  fill: #D7B876;
+  fill-opacity: 0.86;
+}
+
+.atmosphere__neuron--secondary {
+  fill: #83B88B;
+  animation-delay: -2.8s;
+}
+
+.atmosphere__feature-layer {
+  fill: rgba(194, 216, 181, 0.045);
+  stroke: rgba(194, 216, 181, 0.34);
+  stroke-width: 0.8;
+  animation: feature-drift 8s ease-in-out infinite alternate;
+}
+
+.atmosphere__embedding-point {
+  fill: #C2D8B5;
+  fill-opacity: 0.74;
+  animation: neuron-pulse 5.2s ease-in-out infinite;
+}
+
+.atmosphere__embedding-point:nth-of-type(even) {
+  fill: #D7B876;
+  animation-delay: -2s;
+}
+
+.atmosphere__particle {
+  fill: #D7EBC2;
+  filter: drop-shadow(0 0 4px rgba(215, 235, 194, 0.65));
+}
+
+.atmosphere__particle--gold {
+  fill: #D7B876;
+  filter: drop-shadow(0 0 4px rgba(215, 184, 118, 0.55));
+}
+
+.atmosphere__signal {
+  fill: #DCEFAE;
+  filter: drop-shadow(0 0 5px rgba(220, 239, 174, 0.75));
+}
+
+.atmosphere__signal--gold {
+  fill: #E5C47D;
+  filter: drop-shadow(0 0 5px rgba(229, 196, 125, 0.75));
+}
+
+.atmosphere__coordinate {
+  position: absolute;
+  bottom: 31px;
+  color: rgba(217, 232, 201, 0.46);
+  font-family: var(--mono);
+  font-size: 7px;
+  letter-spacing: 0.13em;
+}
+
+.atmosphere__coordinate--left {
+  left: max(56px, calc((100% - 1220px) / 2));
+}
+
+.atmosphere__coordinate--right {
+  right: max(56px, calc((100% - 1220px) / 2));
+}
+
+.mood-selector {
+  position: absolute;
+  z-index: 5;
+  top: 101px;
+  right: max(48px, calc((100% - 1220px) / 2));
+  display: flex;
+  min-height: 58px;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 7px 6px 13px;
+  border: 1px solid rgba(206, 225, 190, 0.2);
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(14, 53, 37, 0.82), rgba(4, 29, 21, 0.8));
+  box-shadow: 0 14px 36px rgba(1, 16, 11, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(20px) saturate(135%);
+  -webkit-backdrop-filter: blur(20px) saturate(135%);
+}
+
+.mood-selector__context {
+  display: grid;
+  gap: 4px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(210, 228, 194, 0.16);
+}
+
+.mood-selector__eyebrow,
+.mood-selector__clock {
+  white-space: nowrap;
+  font-family: var(--mono);
+  font-size: 7px;
+  letter-spacing: 0.1em;
+}
+
+.mood-selector__eyebrow {
+  color: rgba(228, 237, 216, 0.88);
+}
+
+.mood-selector__clock {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: rgba(194, 216, 181, 0.58);
+  letter-spacing: 0.045em;
+}
+
+.mood-selector__clock time {
+  color: #E0EACD;
+}
+
+.mood-selector__clock-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #CDE88D;
+  box-shadow: 0 0 9px rgba(205, 232, 141, 0.65);
+}
+
+.mood-selector__options {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.mood-selector__button {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  min-height: 39px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 999px;
+  color: rgba(236, 240, 222, 0.72);
+  background: transparent;
+  cursor: pointer;
+  font-size: 9px;
+  white-space: nowrap;
+  transition: color 180ms ease, transform 180ms ease;
+}
+
+.mood-selector__button:hover {
+  color: #F7F5E9;
+}
+
+.mood-selector__button:active {
+  transform: scale(0.97);
+}
+
+.mood-selector__button.is-active {
+  color: #132A1E;
+}
+
+.mood-selector__pill {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border: 1px solid rgba(235, 243, 212, 0.7);
+  border-radius: inherit;
+  background: linear-gradient(135deg, #E0EDC3, #C3DC96);
+  box-shadow: 0 5px 16px rgba(165, 203, 111, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
+.mood-selector__button-label {
+  position: relative;
+}
+
+.mood-selector__mark {
+  color: #D8E9BB;
+  font-family: var(--mono);
+  font-size: 6px;
+  letter-spacing: 0.04em;
+}
+
+.mood-selector__button.is-active .mood-selector__mark {
+  color: #536B3D;
+}
+
+.mood-selector__button.is-time-current:not(.is-active)::after {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #D9EBAF;
+  box-shadow: 0 0 7px rgba(217, 235, 175, 0.8);
+  content: "";
+}
+
+.mood-selector__button:focus-visible {
+  outline: 2px solid #E5C47D;
+  outline-offset: 3px;
+}
+
+@media (max-width: 950px) {
+  .mood-selector {
+    right: 42px;
+  }
+}
+
+@media (max-width: 700px) {
+  .atmosphere__attention,
+  .atmosphere__features {
+    opacity: 0.45;
+  }
+
+  .atmosphere__neural {
+    opacity: 0.65;
+  }
+
+  .mood-selector {
+    top: 78px;
+    right: 15px;
+    left: 15px;
+    display: grid;
+    min-height: 73px;
+    gap: 5px;
+    padding: 8px 9px 7px;
+    border-radius: 18px;
+  }
+
+  .mood-selector__context {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4px;
+    border: 0;
+  }
+
+  .mood-selector__eyebrow,
+  .mood-selector__clock {
+    font-size: 6px;
+  }
+
+  .mood-selector__options {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 2px;
+  }
+
+  .mood-selector__button {
+    min-width: 0;
+    min-height: 34px;
+    gap: 3px;
+    padding-inline: 3px;
+    font-size: 8px;
+  }
+
+  .mood-selector__mark {
+    display: none;
+  }
+
+  .mood-selector__name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .mood-selector__button.is-time-current:not(.is-active)::after {
+    top: 5px;
+    right: 3px;
+  }
+
+  .atmosphere__coordinate {
+    bottom: 16px;
+    font-size: 6px;
+  }
+
+  .atmosphere__coordinate--left {
+    left: 20px;
+  }
+
+  .atmosphere__coordinate--right {
+    right: 20px;
+  }
+}
+
+@keyframes circuit-flow {
+  to {
+    stroke-dashoffset: -120;
+  }
+}
+
+@keyframes attention-shimmer {
+  from {
+    fill-opacity: 0.08;
+  }
+
+  to {
+    fill-opacity: 0.32;
+  }
+}
+
+@keyframes neuron-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.16);
+  }
+}
+
+@keyframes feature-drift {
+  from {
+    transform: translateY(3px);
+  }
+
+  to {
+    transform: translateY(-3px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .atmosphere__trace,
+  .atmosphere__attention-cell,
+  .atmosphere__neural-flow,
+  .atmosphere__neuron,
+  .atmosphere__feature-layer,
+  .atmosphere__embedding-point {
+    animation: none;
+  }
+}
+

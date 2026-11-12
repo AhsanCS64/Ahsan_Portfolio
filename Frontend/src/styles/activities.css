@@ -363,40 +363,69 @@
   }
 
   .achievement-card {
-    min-height: 220px;
-    padding: 22px;
+    min-height: 0;
+    padding: 18px;
   }
 
   .achievement-card__logo {
-    top: 58px;
-    right: 16px;
-    width: 96px;
-    height: 96px;
-    padding: 10px;
-    border-radius: 22px;
+    position: relative;
+    inset: auto;
+    order: 1;
+    align-self: flex-end;
+    width: 88px;
+    height: 88px;
+    margin: 10px 0 14px;
+    padding: 9px;
+    border-radius: 20px;
   }
 
   .achievement-card__logo--large {
-    width: 108px;
-    height: 108px;
+    width: 98px;
+    height: 98px;
     padding: 9px;
   }
 
   .achievement-card__mark {
-    top: 58px;
-    right: 16px;
-    width: 96px;
-    height: 96px;
-    border-radius: 22px;
-    font-size: 38px;
+    position: relative;
+    inset: auto;
+    order: 1;
+    align-self: flex-end;
+    width: 88px;
+    height: 88px;
+    margin: 10px 0 14px;
+    border-radius: 20px;
+    font-size: 36px;
+  }
+
+  .achievement-card__topline {
+    order: 0;
   }
 
   .achievement-card__result {
-    font-size: 42px;
+    order: 2;
+    margin: 0 0 8px;
+    font-size: clamp(32px, 9vw, 38px);
+    letter-spacing: -0.065em;
+    line-height: 1.05;
   }
 
   .achievement-card h2 {
-    font-size: 21px;
+    order: 3;
+    margin-bottom: 12px;
+    font-size: 20px;
+  }
+
+  .achievement-card__context {
+    order: 4;
+    padding-top: 10px;
+    font-size: 11px;
+    overflow-wrap: anywhere;
+  }
+
+  .achievement-card__context span {
+    font-size: 8px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
   }
 
   .eca-role {
@@ -455,5 +484,34 @@
   .eca-role__meta {
     flex-direction: column;
     gap: 3px;
+  }
+
+  .achievement-card {
+    padding: 16px;
+  }
+
+  .achievement-card__logo {
+    width: 80px;
+    height: 80px;
+    margin-block: 8px 12px;
+  }
+
+  .achievement-card__logo--large {
+    width: 90px;
+    height: 90px;
+  }
+
+  .achievement-card__mark {
+    width: 80px;
+    height: 80px;
+    margin-block: 8px 12px;
+  }
+
+  .achievement-card__result {
+    font-size: clamp(30px, 8.5vw, 34px);
+  }
+
+  .achievement-card h2 {
+    font-size: 19px;
   }
 }

@@ -120,9 +120,9 @@ export const projects = [
 export const achievements = [
   {
     number: "01",
-    recognition: "2nd Highest CGPA",
-    title: "Department of Computer Science & Engineering",
-    context: "Faculty of Engineering and Technology · Dhaka University",
+    recognition: "CGPA: 3.76",
+    title: "2nd Highest CGPA",
+    context: "Department fo Computer Science and Engineering · Faculty of Engineering and Technology · Dhaka University",
     logo: dhakaUniversityLogo,
     logoSize: "large",
     markLabel: "NATIONAL INSTITUTE OF TEXTILE ENGINEERING AND RESEARCH",

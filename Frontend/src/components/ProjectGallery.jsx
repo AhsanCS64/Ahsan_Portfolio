@@ -56,19 +56,6 @@ export default function ProjectGallery({ project }) {
       aria-label={`${project.name} visual archive`}
       aria-roledescription="carousel"
     >
-      <div className="project-gallery__topline">
-        <div className="project-gallery__archive">
-          <span className="project-gallery__archive-dot" />
-          <span>VISUAL DOCUMENTATION</span>
-        </div>
-
-        <span className="project-gallery__archive-index">
-          {hasGallery
-            ? `${String(activeIndex + 1).padStart(2, "0")} / ${String(images.length).padStart(2, "0")}`
-            : "ARCHIVE / PENDING"}
-        </span>
-      </div>
-
       <div className="project-gallery__stage">
         <div className="project-gallery__stage-grid" aria-hidden="true" />
 

@@ -250,10 +250,8 @@ export default function LearningPage() {
               <span className="additional-learning__title">
                 <span>04</span>
                 <span>
-                  <strong>Additional learning & training</strong>
-                  <small>
-                    Other certifications, courses, and technical programs
-                  </small>
+                  <strong>Additional learning & training </strong>
+
                 </span>
               </span>
 

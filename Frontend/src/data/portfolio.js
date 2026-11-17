@@ -12,6 +12,17 @@ import khamarbariProductionsImage from "../../Photo/Projects/khamarbari_producti
 import cmrxHomepageImage from "../../Photo/Projects/cmrx_homepage.png";
 import cmrxDashboardImage from "../../Photo/Projects/cmrx_dashboard.png";
 import cmrxPrescriptionsImage from "../../Photo/Projects/cmrx_viewPrescriptions.png";
+import ctrxLogo from "../../Photo/Projects/ctrx/logo_ctrx.png";
+import khamarbariLogo from "../../Photo/Projects/khamarbari_logo.png";
+import cmrxLogo from "../../Photo/Projects/CMRx Medical Records Logo.png";
+import ctrxAdminOverview from "../../Photo/Projects/ctrx/admin_overview.jpg";
+import ctrxGovernmentId from "../../Photo/Projects/ctrx/admin_govidCreation.jpg";
+import ctrxLandlordPortfolio from "../../Photo/Projects/ctrx/landlord_portfolio.jpg";
+import ctrxLandlordListings from "../../Photo/Projects/ctrx/landlord_listtings.jpg";
+import ctrxPropertySearch from "../../Photo/Projects/ctrx/tenant_propertisearch.jpg";
+import ctrxTenantRic from "../../Photo/Projects/ctrx/tenant_ric.jpg";
+import ctrxSampleRic from "../../Photo/Projects/ctrx/sample_ric.png";
+import ctrxTenantTools from "../../Photo/Projects/ctrx/tenant_tools.jpg";
 import nccLogo from "../../Photo/ECA/NCC.png";
 import nssLogo from "../../Photo/ECA/NSS.png";
 import dhakaUniversityLogo from "../../Photo/institutions/dhaka_university.png";
@@ -22,7 +33,78 @@ export const projects = [
   {
     number: "01",
     type: "Full-stack · Web application",
+    name: "CTRx",
+    logo: ctrxLogo,
+    summary:
+      "Central Tenant Records is a rental management platform for Bangladesh. It connects tenants, landlords, and government authorities through verified household identities and documented tenancy records.",
+    details: [
+      "Household-based Rental Identity Certificates (RICs) with government document verification",
+      "Landlord property portfolios and rental listings",
+      "Tenancy management, verified rental payment records, and tenant reliability scoring",
+      "Landlord reviews, dispute resolution, and role-based dashboards",
+    ],
+    gallery: [
+      {
+        image: ctrxAdminOverview,
+        alt: "CTRx government dashboard",
+        title: "Government dashboard",
+        explanation: "The overview brings government administration and registration activity into one workspace.",
+      },
+      {
+        image: ctrxGovernmentId,
+        alt: "CTRx government ID creation",
+        title: "Government ID creation",
+        explanation: "The administration interface includes a workflow for creating government IDs.",
+      },
+      {
+        image: ctrxLandlordPortfolio,
+        alt: "CTRx landlord portfolio",
+        title: "Landlord portfolio",
+        explanation: "Landlords can review their properties from a dedicated portfolio view.",
+      },
+      {
+        image: ctrxLandlordListings,
+        alt: "CTRx landlord listings",
+        title: "Landlord listings",
+        explanation: "The listings view gives landlords a place to manage rental listings.",
+      },
+      {
+        image: ctrxPropertySearch,
+        alt: "CTRx property search",
+        title: "Property search",
+        explanation: "Tenants can browse available rental properties.",
+      },
+      {
+        image: ctrxTenantRic,
+        alt: "CTRx tenant RIC dashboard",
+        title: "Tenant RIC dashboard",
+        explanation: "Tenants can review their Rental Identity Certificate information.",
+      },
+      {
+        image: ctrxSampleRic,
+        alt: "CTRx sample Rental Identity Certificate",
+        title: "Sample Rental Identity Certificate",
+        explanation: "A sample of the certificate issued through the registration workflow.",
+      },
+      {
+        image: ctrxTenantTools,
+        alt: "CTRx tenant tools",
+        title: "Tenant tools",
+        explanation: "The tenant workspace brings rental tools together in one view.",
+      },
+    ],
+    stack: ["React", "TypeScript", "Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "Render", "Neon"],
+    href: "https://ctrx-chi.vercel.app/",
+    repo: "https://github.com/AhsanCS64/CTRx",
+    linkLabel: "Live demo",
+    kind: "ctrx",
+  },
+
+  {
+    number: "02",
+    type: "Full-stack · Web application",
     name: "Khamar Bari",
+    logo: khamarbariLogo,
     summary:
       "A farm-management platform bringing everyday operations into one clear, interactive workspace.",
     details: [
@@ -63,9 +145,10 @@ export const projects = [
   },
 
   {
-    number: "02",
+    number: "03",
     type: "Database systems · Academic project",
     name: "CMR .x",
+    logo: cmrxLogo,
     summary:
       "A central medical-records and disease-tracking system built around structured healthcare information.",
     details: [
@@ -101,9 +184,8 @@ export const projects = [
     kind: "medical",
   },
 
-
   {
-    number: "03",
+    number: "04",
     type: "Machine learning · Bangla NLP",
     name: "HeadlineGuard BD",
     summary:
@@ -120,7 +202,6 @@ export const projects = [
     linkLabel: "Dataset",
     kind: "research",
   },
-  
 ];
 
 export const achievements = [

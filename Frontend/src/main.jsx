@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import "./styles.css";
 import "./styles/home-interactions.css";
 import "./styles/skill-constellation.css";
+import "./styles/refinement.css";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>

@@ -254,6 +254,9 @@ export function ProjectCard({ project, index }) {
         <ProjectGallery project={project} />
         <div className="project-card__body">
           <div className="project-card__intro">
+            {project.logo && (
+              <img className="project-card__logo" src={project.logo} alt="" loading="lazy" />
+            )}
             <h2>{project.name}</h2>
             <p>{project.summary}</p>
             <div className="project-card__links">

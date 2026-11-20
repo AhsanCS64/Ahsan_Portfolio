@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { achievements } from "../data/portfolio.js";
 import { ArrowIcon, PageIntro, Reveal } from "../components/shared.jsx";
+import BeecrowdShowcase from "../components/BeecrowdShowcase.jsx";
+
 
 export default function AchievementsPage() {
   return (
@@ -8,13 +10,13 @@ export default function AchievementsPage() {
       <div className="page-wrap">
         <PageIntro
           number="06"
-          eyebrow="Achievements / competitions"
-          title={<>A few milestones<br />earned <em>together.</em></>}
-          copy="Academic milestones and competition results earned through consistent study, experimentation, and teamwork."
+          eyebrow="Achievements / competitions / problem solving"
+          title={<>Progress through<br /><em>practice.</em></>}
+          copy="Academic milestones, competition results, and problem-solving progress built through consistent study, experimentation, and teamwork."
         />
-        <section aria-label="Competition achievements">
+        <section aria-label="Academic and competition achievements">
           <div className="activities-section-label">
-            <span>SELECTED RESULTS</span>
+            <span>01 / ACADEMICS &amp; COMPETITIONS</span>
             <span>{String(achievements.length).padStart(2, "0")} RECOGNITIONS</span>
           </div>
           <div className="achievement-grid">
@@ -45,6 +47,7 @@ export default function AchievementsPage() {
             ))}
           </div>
         </section>
+        <BeecrowdShowcase />
         <div className="page-end-link">
           <span>Outside competitions, too</span>
           <Link to="/eca">Explore my extracurricular experience <ArrowIcon /></Link>

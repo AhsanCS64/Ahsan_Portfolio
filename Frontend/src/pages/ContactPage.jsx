@@ -38,6 +38,13 @@ const contactMethods = [
     detail: "Projects, experiments, and source",
     mark: "<>",
   },
+  {
+    label: "Beecrowd",
+    value: "AhsanHabib.NCS-12",
+    href: "https://judge.beecrowd.com/en/profile/790377",
+    detail: "Algorithm practice and problem-solving progress",
+    mark: "{}",
+  },
 ];
 
 const conversationTopics = [

@@ -330,18 +330,35 @@
   width: 36px;
   height: 36px;
   place-items: center;
-  border: 1px solid rgba(23, 78, 54, 0.2);
+  border: 1px solid rgba(23, 78, 54, 0.14);
   border-radius: 50%;
-  color: #315B3D;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.55);
   font-family: var(--mono);
   font-size: 11px;
-  transition: color 180ms ease, background 180ms ease, transform 180ms ease;
+  transition: color 180ms ease, background 180ms ease, transform 180ms ease, border-color 180ms ease;
 }
 
+.contact-method__icon {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 auto;
+  transition: color 180ms ease;
+}
+
+/* Brand colors at rest */
+.contact-method__mark--email   { color: #EA4335; }
+.contact-method__mark--phone   { color: #34A853; }
+.contact-method__mark--linkedin { color: #0A66C2; }
+.contact-method__mark--researchgate { color: #00CCBB; }
+.contact-method__mark--github  { color: #24292F; }
+.contact-method__mark--huggingface { color: #FF9D00; }
+.contact-method__mark--beecrowd { color: #315B3D; }
+
+/* White icon on hover (circle turns emerald) */
 .contact-method:hover .contact-method__mark {
   color: var(--chalk);
   background: var(--emerald);
+  border-color: transparent;
   transform: rotate(-7deg);
 }
 

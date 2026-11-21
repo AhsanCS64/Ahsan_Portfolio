@@ -5,6 +5,10 @@ import pytorchCertificateUrl from "../../Certifications/PyTorch Deep Learning Pr
 import ibmDataScienceCertificateUrl from "../../Certifications/IBM Data Science Professional Certificate.png";
 import machineLearningCertificateUrl from "../../Certifications/Machine Learning Specialization.png";
 import deepLearningCertificateUrl from "../../Certifications/DeepLearning_Specialization.png";
+import headlineguardClickbaitOpeningImage from "../../Photo/Projects/HeadlineguardBD/Clickbait (Headline + Article Opening).png";
+import headlineguardClickbaitHeadlineImage from "../../Photo/Projects/HeadlineguardBD/Clickbait-Headlineonly.png";
+import headlineguardNonClickbaitImage from "../../Photo/Projects/HeadlineguardBD/Non-Clickbait.png";
+import headlineguardLogo from "../../Photo/Projects/HeadlineguardBD/HeadlineGuard BD Logo Emblem.png";
 import khamarbariHomeImage from "../../Photo/Projects/Khamarbari_home.png";
 import khamarbariDashboardImage from "../../Photo/Projects/khamarbari_dashboard.png";
 import khamarbariAnimalManagementImage from "../../Photo/Projects/Khamarbari_AnimalManagement.png";
@@ -188,18 +192,38 @@ export const projects = [
     number: "04",
     type: "Machine learning · Bangla NLP",
     name: "HeadlineGuard BD",
+    logo: headlineguardLogo,
     summary:
-      "An experimental study of machine-learning approaches to identifying clickbait in Bangla headlines.",
+      "A deployed Bangla clickbait-detection demo that analyzes a headline alone or with an optional article opening, combining SVM and fine-tuned BanglaBERT scores.",
     details: [
-      "Compared TF-IDF, recurrent, and transformer approaches",
-      "Character n-gram TF-IDF + LinearSVC baseline",
-      "79.83% baseline accuracy · 77.86% macro F1",
+      "Headline-only model: 82.84% accuracy · 75.56% clickbait F1",
+      "Headline + opening model: 82.95% accuracy · 76.78% clickbait F1",
+      "SVM (TF-IDF + LinearSVC) combined with fine-tuned BanglaBERT",
     ],
-    gallery: [],
-    galleryNote: "Research visuals and model comparisons are coming soon.",
-    stack: ["Python", "scikit-learn", "XGBoost", "BanglaBERT"],
-    href: "https://huggingface.co/datasets/Motahar/banglabait",
-    linkLabel: "Dataset",
+    gallery: [
+      {
+        image: headlineguardClickbaitHeadlineImage,
+        alt: "HeadlineGuard BD detecting a clickbait headline using the headline-only model",
+        title: "Headline-only detection",
+        explanation: "The headline-only model flags clickbait from the headline alone, achieving 82.84% accuracy and 75.56% clickbait F1 on the official test split.",
+      },
+      {
+        image: headlineguardClickbaitOpeningImage,
+        alt: "HeadlineGuard BD analyzing a clickbait headline together with its article opening",
+        title: "Headline + article opening",
+        explanation: "When an article opening is available, the combined model improves to 82.95% accuracy and 76.78% clickbait F1 by incorporating additional context.",
+      },
+      {
+        image: headlineguardNonClickbaitImage,
+        alt: "HeadlineGuard BD correctly classifying a non-clickbait Bangla headline",
+        title: "Non-clickbait classification",
+        explanation: "The system correctly identifies legitimate headlines, demonstrating reliable discrimination between clickbait and genuine news content.",
+      },
+    ],
+    stack: ["Python", "scikit-learn", "BanglaBERT", "Transformers", "Streamlit"],
+    href: "https://headlineguardbd.streamlit.app/",
+    linkLabel: "Live demo",
+    repo: "https://github.com/AhsanCS64/HeadlineGuard_BD",
     kind: "research",
   },
 ];

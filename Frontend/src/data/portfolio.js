@@ -32,6 +32,12 @@ import nssLogo from "../../Photo/ECA/NSS.png";
 import dhakaUniversityLogo from "../../Photo/institutions/dhaka_university.png";
 import bubtLogo from "../../Photo/institutions/bubt.png";
 import dhakaBoardLogo from "../../Photo/institutions/dhaka_board.png";
+import willesLogo from "../../Photo/institutions/willes-little-flower-school-logo-png_seeklogo-643756-removebg-preview.png";
+import bafskLogo from "../../Photo/institutions/BAFSK.webp";
+import niterLogo from "../../Photo/institutions/niter.png";
+import willesPhoto from "../../Photo/institutions/willes-little-flower-school-logo-png_seeklogo-643756-removebg-preview.png";
+import bafskPhoto from "../../Photo/institutions/BAFSK.webp";
+import niterPhoto from "../../Photo/institutions/niter.png";
 
 export const projects = [
   {
@@ -307,6 +313,78 @@ export const extracurricularRoles = [
   },
 ];
 
+export const educationHistory = [
+  {
+    number: "01",
+    kind: "school",
+    level: "Primary Education",
+    institution: "Willes Little Flower School and College",
+    affiliation: "English Medium Section",
+    logo: willesLogo,
+    photo: willesPhoto,
+    period: "Nursery – Standard 6",
+    location: "Dhaka, Bangladesh",
+    notes: [
+      "Followed the English-medium curriculum from Nursery through Standard 6.",
+      "Early foundation in English language, science, and mathematics.",
+      "Built strong literacy and analytical skills in a structured English-medium environment.",
+    ],
+  },
+  {
+    number: "02",
+    kind: "school",
+    level: "Secondary Education (S.S.C)",
+    institution: "Willes Little Flower School and College",
+    affiliation: "English Version · Dhaka Board",
+    logo: willesLogo,
+    photo: willesPhoto,
+    result: "GPA 4.72",
+    period: "Standard 7 – S.S.C (2019)",
+    location: "Dhaka, Bangladesh",
+    notes: [
+      "Transitioned from English Medium to the English Version stream of the same institution.",
+      "Completed the Secondary School Certificate (S.S.C) under the Dhaka Education Board.",
+      "Achieved GPA 4.72 — a strong foundation across science subjects.",
+    ],
+  },
+  {
+    number: "03",
+    kind: "college",
+    level: "Higher Secondary Education (H.S.C)",
+    institution: "BAF Shaheen College Kurmitola",
+    affiliation: "Dhaka Board · English Version · Science",
+    logo: bafskLogo,
+    photo: bafskPhoto,
+    result: "GPA 5.00",
+    period: "2019 – 2021",
+    location: "Kurmitola, Dhaka, Bangladesh",
+    notes: [
+      "Attended one of Bangladesh's premier cadet-affiliated colleges.",
+      "Completed the Higher Secondary Certificate (H.S.C) in the Science stream.",
+      "Achieved a perfect GPA of 5.00 out of 5.00.",
+    ],
+  },
+  {
+    number: "04",
+    kind: "university",
+    level: "B.Sc in Computer Science & Engineering",
+    institution: "National Institute of Textile Engineering and Research (NITER)",
+    affiliation: "Constituent College · University of Dhaka · Technology Unit",
+    logo: niterLogo,
+    photo: dhakaUniversityLogo,
+    photoSecondary: niterPhoto,
+    result: "CGPA 3.76",
+    period: "2022 – Present",
+    location: "Nayarhat, Savar, Dhaka, Bangladesh",
+    notes: [
+      "Admitted through the Technology Unit entrance examination of the University of Dhaka.",
+      "NITER is a constituent college of the University of Dhaka — degrees are awarded by the University.",
+      "Maintaining a CGPA of 3.76 / 4.00 through six completed semesters — 2nd highest in the department.",
+      "Focus areas: machine learning, deep learning, NLP, full-stack development, and software engineering.",
+    ],
+  },
+];
+
 export const skillGroups = [
   {
     title: "Software engineering",
@@ -384,6 +462,7 @@ export const navItems = [
   { to: "/", label: "Home", end: true },
   { to: "/work", label: "Projects" },
   { to: "/about", label: "About" },
+  { to: "/education", label: "Education" },
   { to: "/learning", label: "Learning" },
   { to: "/cv", label: "CV" },
   { to: "/achievements", label: "Achievements" },

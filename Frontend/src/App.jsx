@@ -7,6 +7,7 @@ import LearningPage from "./pages/LearningPage.jsx";
 import CvPage from "./pages/CvPage.jsx";
 import AchievementsPage from "./pages/AchievementsPage.jsx";
 import EcaPage from "./pages/EcaPage.jsx";
+import EducationPage from "./pages/EducationPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/work" element={<WorkPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/education" element={<EducationPage />} />
         <Route path="/learning" element={<LearningPage />} />
         <Route path="/cv" element={<CvPage />} />
         <Route path="/achievements" element={<AchievementsPage />} />

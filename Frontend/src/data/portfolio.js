@@ -9,6 +9,9 @@ import headlineguardClickbaitOpeningImage from "../../Photo/Projects/Headlinegua
 import headlineguardClickbaitHeadlineImage from "../../Photo/Projects/HeadlineguardBD/Clickbait-Headlineonly.png";
 import headlineguardNonClickbaitImage from "../../Photo/Projects/HeadlineguardBD/Non-Clickbait.png";
 import headlineguardLogo from "../../Photo/Projects/HeadlineguardBD/HeadlineGuard BD Logo Emblem.png";
+import gamesenseLandingImage from "../../Photo/Projects/GameSense/Landing Screen.png";
+import gamesenseSingleGameImage from "../../Photo/Projects/GameSense/Single Game Selected.png";
+import gamesenseMultipleGamesImage from "../../Photo/Projects/GameSense/Multiple Games Selected.png";
 import khamarbariHomeImage from "../../Photo/Projects/Khamarbari_home.png";
 import khamarbariDashboardImage from "../../Photo/Projects/khamarbari_dashboard.png";
 import khamarbariAnimalManagementImage from "../../Photo/Projects/Khamarbari_AnimalManagement.png";
@@ -231,6 +234,48 @@ export const projects = [
     linkLabel: "Live demo",
     repo: "https://github.com/AhsanCS64/HeadlineGuard_BD",
     kind: "research",
+  },
+
+  {
+    number: "05",
+    type: "Machine learning · Recommender system",
+    name: "GameSense",
+    summary:
+      "A personalized Steam game recommendation app that learns your taste from the games you list and provides explainable suggestions.",
+    details: [
+      "History-based matrix factorization trained in PyTorch on the real Steam dataset",
+      "Explainable recommendations with 'Because you liked <game>' justifications",
+      "Forgiving title search with exact, whole-word, and fuzzy matching over 993 games",
+      "Instant NumPy inference with cold-start taste vector generation without retraining",
+    ],
+    gallery: [
+      {
+        image: gamesenseLandingImage,
+        alt: "GameSense personalized Steam game recommender landing screen",
+        title: "Personalized game discovery",
+        explanation:
+          "The interactive Streamlit interface lets users search, multiselect games, use quick-start picks, or hit 'Surprise me' across a catalog of 993 Steam titles.",
+      },
+      {
+        image: gamesenseSingleGameImage,
+        alt: "GameSense single game recommendation results with explanations",
+        title: "Taste vector generation & explanation",
+        explanation:
+          "Selecting a game constructs an instant taste vector, returning ranked recommendations paired with player counts and explainable 'Because you liked' attribution.",
+      },
+      {
+        image: gamesenseMultipleGamesImage,
+        alt: "GameSense multiple games taste modeling and ranked recommendations",
+        title: "Multi-game taste aggregation",
+        explanation:
+          "Combining preferences across multiple titles refines the latent taste representation, generating cohesive multi-game recommendations with CSV export and theme switching.",
+      },
+    ],
+    stack: ["Python", "PyTorch", "NumPy", "pandas", "Streamlit", "pytest"],
+    href: "https://gamesense-v2.streamlit.app/",
+    linkLabel: "Live demo",
+    repo: "https://github.com/AhsanCS64/GameSenseV2",
+    kind: "recommender",
   },
 ];
 

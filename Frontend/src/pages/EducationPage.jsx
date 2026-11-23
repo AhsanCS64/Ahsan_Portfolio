@@ -9,8 +9,8 @@ export default function EducationPage() {
         <PageIntro
           number="04"
           eyebrow="Education / academic background"
-          title={<>English Version<br /><em>academic background</em></>}
-          copy="I completed my SSC and HSC in the Science stream of Bangladesh’s English Version curriculum. I began my schooling in an English Medium section and now study Computer Science and Engineering at NITER."
+          title={<>English-medium.<br /><em>Science-rooted.</em></>}
+          copy="Schooled entirely in English - first English Medium, then English Version - through S.S.C and H.S.C in the Science stream. Strong written and spoken English, analytical thinking, and a problem-solving orientation carried forward into engineering and AI."
         />
 
         <section aria-label="Educational institutions">

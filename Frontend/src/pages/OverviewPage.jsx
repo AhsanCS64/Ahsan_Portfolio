@@ -33,7 +33,12 @@ const chapters = [
     to: "/research",
     link: "Explore my research journey",
   },
-  { title: "Education", text: "I study Computer Science and Engineering at NITER, affiliated with the University of Dhaka. A favorite part of learning a new algorithm is working through an example by hand before writing the code.", to: "/education", link: "Academic background" },
+  {
+    title: "Education",
+    text: "I study Computer Science and Engineering at NITER, affiliated with the University of Dhaka. I completed my SSC and HSC in the Science stream of Bangladesh’s English Version curriculum.",
+    to: "/education",
+    link: "Academic background",
+  },
   { title: "Projects", text: "My portfolio spans " + projects.length + " projects, from managing farm production in KhamarBari to explaining model predictions in MindScope. Each project has a demo you can explore.", to: "/work", link: "Explore the projects" },
 ];
 

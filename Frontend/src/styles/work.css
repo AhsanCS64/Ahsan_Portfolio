@@ -552,3 +552,12 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+.project-card__details .tag {
+  gap: 7px;
+}
+
+.project-tech-icon {
+  flex: none;
+  object-fit: contain;
+}

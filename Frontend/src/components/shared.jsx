@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { Link } from "react-router-dom";
+import ProjectTechIcon from "./ProjectTechIcon.jsx";
 import ProjectGallery from "./ProjectGallery.jsx";
 import { projects } from "../data/portfolio.js";
 
@@ -275,7 +276,12 @@ export function ProjectCard({ project, index }) {
           <div className="project-card__details">
             <ul>{project.details.map((detail) => <li key={detail}>{detail}</li>)}</ul>
             <div className="tag-list">
-              {project.stack.map((item) => <span className="tag" key={item}>{item}</span>)}
+              {project.stack.map((item) => (
+                <span className="tag" key={item}>
+                  <ProjectTechIcon name={item} />
+                  {item}
+                </span>
+              ))}
             </div>
           </div>
         </div>

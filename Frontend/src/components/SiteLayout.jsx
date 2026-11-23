@@ -44,7 +44,7 @@ export default function SiteLayout({ children }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1 }}
       >
-        <Link className="wordmark" to="/" aria-label="Ahsan Habib, home">
+        <Link className="wordmark" to="/" aria-label="Ahsan Habib, overview">
           <span className="wordmark__mark" aria-hidden="true">
             <svg viewBox="0 0 32 32" fill="none">
               <path d="M16 3 27 9v14l-11 6L5 23V9l11-6Z"/>
@@ -123,7 +123,7 @@ export default function SiteLayout({ children }) {
                     </>
                   ) : (
                     <>
-                      <span className="nav-link__index" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+                      <span className="nav-link__index" aria-hidden="true">{String(index).padStart(2, "0")}</span>
                       <span className="nav-link__label">{item.label}</span>
                     </>
                   )}
@@ -151,7 +151,7 @@ export default function SiteLayout({ children }) {
 
       <footer className="site-footer">
         <div className="site-footer__inner">
-          <Link className="wordmark" to="/" aria-label="Ahsan, home">
+          <Link className="wordmark" to="/" aria-label="Ahsan, overview">
             <span className="wordmark__mark" aria-hidden="true">
               <svg viewBox="0 0 32 32" fill="none">
                 <path d="M16 25V10m0 7c-5.8 0-9-3.1-9-8.5 5.7 0 9 2.8 9 8.5Zm0-3c0-5.7 3.2-9 9-9 0 5.8-3.2 9-9 9Z" />

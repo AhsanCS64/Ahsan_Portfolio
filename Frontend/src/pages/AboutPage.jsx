@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion, useReducedMotion } from "framer-motion";
 import { portraitUrl, skillGroups } from "../data/portfolio.js";
 import { ArrowIcon, PageIntro, Reveal, SectionHeading } from "../components/shared.jsx";
+import ProjectTechIcon from "../components/ProjectTechIcon.jsx";
 import SkillIcon from "../components/SkillIcon.jsx";
 
 const researchAreas = [
@@ -20,7 +21,7 @@ function ResearchAreaIcon({ kind }) {
   };
 
   return (
-    <svg className="interest-branch__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <svg className={`interest-branch__icon interest-branch__icon--${kind}`} viewBox="0 0 24 24" fill="none" aria-hidden="true">
       {iconPaths[kind]}
     </svg>
   );
@@ -115,7 +116,7 @@ export default function AboutPage() {
                 <div className="tag-list">
                   {group.skills.map((skill) => (
                     <span className="tag tag--dark" key={skill}>
-                      <SkillIcon skill={skill} />
+                      <ProjectTechIcon name={skill} fallback={<SkillIcon skill={skill} />} />
                       {skill}
                     </span>
                   ))}

@@ -619,9 +619,8 @@
 }
 
 .toolkit-card .tag--dark .skill-glyph {
-  width: 11px;
-  height: 11px;
-  color: #66836a;
+  width: 18px;
+  height: 18px;
 }
 
 .interest-branch__icon {
@@ -638,8 +637,12 @@
   transition: color 250ms ease, transform 350ms ease;
 }
 
+.interest-branch__icon--network { color: #2678a3; }
+.interest-branch__icon--language { color: #8b519e; }
+.interest-branch__icon--vision { color: #137d72; }
+.interest-branch__icon--layers { color: #b56b20; }
+
 .interest-branch:hover .interest-branch__icon {
-  color: #54815a;
   transform: translateY(-2px) scale(1.06);
 }
 

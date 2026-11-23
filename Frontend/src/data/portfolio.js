@@ -575,7 +575,8 @@ export const additionalLearning = [
 ];
 
 export const navItems = [
-  { to: "/", label: "Home", end: true },
+  { to: "/", label: "Overview", end: true },
+  { to: "/home", label: "Home", end: true },
   { to: "/work", label: "Projects" },
   { to: "/about", label: "About" },
   { to: "/education", label: "Education" },

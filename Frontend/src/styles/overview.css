@@ -1,0 +1,71 @@
+.overview-page {
+  padding-top: clamp(94px, 9vw, 142px);
+  padding-bottom: clamp(32px, 5vw, 76px);
+}
+.overview-cover {
+  display: grid;
+  grid-template-columns: 1.08fr 1fr;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 22px;
+  background: #113d32;
+  color: #f8f6e8;
+}
+.overview-intro {
+  padding: clamp(26px, 4.7vw, 74px);
+  align-self: center;
+}
+.overview-kicker {
+  color: #bfdbbd;
+  font: 500 .72rem var(--mono);
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.overview-cover h1 {
+  margin: .48em 0 .28em;
+  color: inherit;
+  font: 500 clamp(3.2rem, 5.9vw, 6.1rem)/.96 var(--display);
+  letter-spacing: -.055em;
+}
+.overview-cover h1 em { color: #bce2aa; }
+.overview-role { color: #e2efdd; font-size: 1.05rem; }
+.overview-bio {
+  max-width: 47ch;
+  margin: 1.25rem 0 2rem;
+  color: #d3e3d8;
+  line-height: 1.65;
+}
+.overview-links { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 20px; }
+.overview-links a, .overview-chapters a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: 600;
+  font-size: .88rem;
+}
+.overview-links a { color: #f6f7e9; }
+.overview-links a:first-child {
+  background: #daefc9;
+  color: #173f33;
+  padding: 11px 17px;
+  border-radius: 25px;
+}
+.overview-page a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.overview-photo { position: relative; margin: 0; min-height: 360px; }
+.overview-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.overview-chapters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(20px, 3.4vw, 55px);
+  margin-top: clamp(28px, 4vw, 64px);
+}
+.overview-chapters section { display: flex; flex-direction: column; border-top: 1px solid #88a893; padding-top: 18px; }
+.overview-chapters h2 { margin: 0; font: 500 clamp(1.8rem, 3vw, 2.7rem)/1.2 var(--display); }
+.overview-chapters p { line-height: 1.65; margin: .8rem 0 1.3rem; }
+.overview-chapters a { align-self: flex-start; margin-top: auto; color: #235a41; }
+@media (max-width: 760px) {
+  .overview-cover, .overview-chapters { grid-template-columns: 1fr; }
+  .overview-photo { min-height: 0; aspect-ratio: 4 / 3; }
+  .overview-photo img { object-position: center 35%; }
+}
+

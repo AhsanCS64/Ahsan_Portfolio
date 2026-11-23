@@ -1,4 +1,12 @@
+import { useState } from "react";
+
 const devicons = {
+  "Node.js": "nodejs",
+  Express: "express",
+  Git: "git",
+  "TensorFlow / Keras": "tensorflow",
+  MongoDB: "mongodb",
+  Pandas: "pandas",
   React: "react",
   TypeScript: "typescript",
   Python: "python",
@@ -30,9 +38,10 @@ const marks = {
   SHAP: <><path fill="#ef336e" d="M2 4h10l4 4-4 4H2l4-4z" /><path fill="#1582dd" d="M22 12H12l-4 4 4 4h10l-4-4z" /></>,
 };
 
-export default function ProjectTechIcon({ name }) {
+export default function ProjectTechIcon({ name, fallback = null }) {
+  const [failedSlug, setFailedSlug] = useState(null);
   const slug = devicons[name];
-  if (slug) {
+  if (slug && slug !== failedSlug) {
     return (
       <img
         className="project-tech-icon"
@@ -41,7 +50,7 @@ export default function ProjectTechIcon({ name }) {
         height="18"
         alt=""
         loading="lazy"
-        onError={(event) => { event.currentTarget.hidden = true; }}
+        onError={() => setFailedSlug(slug)}
       />
     );
   }
@@ -50,5 +59,5 @@ export default function ProjectTechIcon({ name }) {
     <svg className="project-tech-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
       {marks[name]}
     </svg>
-  ) : null;
+  ) : fallback;
 }

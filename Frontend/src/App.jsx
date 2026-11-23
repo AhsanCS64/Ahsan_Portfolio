@@ -1,5 +1,6 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import SiteLayout from "./components/SiteLayout.jsx";
+import OverviewPage from "./pages/OverviewPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import WorkPage from "./pages/WorkPage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
@@ -15,7 +16,9 @@ export default function App() {
   return (
     <SiteLayout>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<OverviewPage />} />
+        <Route path="/overview" element={<Navigate to="/" replace />} />
+        <Route path="/home" element={<HomePage />} />
         <Route path="/work" element={<WorkPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/education" element={<EducationPage />} />

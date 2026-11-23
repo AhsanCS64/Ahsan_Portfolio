@@ -15,7 +15,7 @@ const skillMarks = {
   tensorflow: <><path d="M12 3v18M5 7l7 5 7-5M5 17l7-5 7 5" /><rect x="3.5" y="5.5" width="3" height="3" rx=".5" /><rect x="17.5" y="5.5" width="3" height="3" rx=".5" /><rect x="10.5" y="10.5" width="3" height="3" rx=".5" /></>,
   cnn: <><rect x="4" y="4" width="5" height="5" rx=".6" /><rect x="10" y="4" width="5" height="5" rx=".6" /><rect x="16" y="4" width="4" height="5" rx=".6" /><rect x="4" y="10" width="5" height="5" rx=".6" /><rect x="10" y="10" width="5" height="5" rx=".6" /><rect x="16" y="10" width="4" height="5" rx=".6" /><path d="M4 18h16" /></>,
   transformers: <><path d="M5 6h14M5 12h14M5 18h14" /><circle cx="8" cy="6" r="2" /><circle cx="15" cy="12" r="2" /><circle cx="10" cy="18" r="2" /><path d="m10 7.5 3.5 3m-2.5 3  -1 2" /></>,
-  bangla: <><path d="M4 7h15M6 4v13c0 2 1.2 3 3 3m8-12-5 6m0-6 5 6" /><text x="12" y="14" textAnchor="middle" dominantBaseline="central">ক</text></>,
+  bangla: <text x="12" y="19" textAnchor="middle" fontSize="21" fill="currentColor" stroke="none">&#x09AC;</text>,
   sql: <><ellipse cx="12" cy="5.5" rx="7.5" ry="2.5" /><path d="M4.5 5.5v12c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5v-12M4.5 11.5c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5" /></>,
   mongodb: <><path d="M12 3c-3 4-5 6.5-5 10a5 5 0 0 0 10 0c0-3.5-2-6-5-10Z" /><path d="M12 9v12m0-5-3-3m3 5 3-3" /></>,
   mysql: <><path d="M4 7h16M6 7v11h12V7M9 10h6m-6 3h6m-6 3h3" /><path d="m16 4 2 3" /></>,
@@ -57,6 +57,15 @@ const groupIconIds = {
   data: "powerbi",
 };
 
+const colors = {
+  javascript: "#977000", react: "#007d98", node: "#438239", express: "#364152",
+  php: "#7064aa", rest: "#137e85", git: "#ce492f", python: "#36719c",
+  sklearn: "#ad651a", xgboost: "#247ba0", features: "#8356ac", evaluation: "#17795c",
+  pytorch: "#c84932", tensorflow: "#c66b00", cnn: "#7059b6", transformers: "#a96c00",
+  bangla: "#087a52", sql: "#306fa2", mongodb: "#338042", mysql: "#187499",
+  pandas: "#57408e", numpy: "#32759b", powerbi: "#aa7500",
+};
+
 export default function SkillIcon({ skill, group, className = "" }) {
   const iconId = skill ? skillIconIds[skill] : groupIconIds[group];
   if (!iconId) return null;
@@ -64,6 +73,7 @@ export default function SkillIcon({ skill, group, className = "" }) {
   return (
     <svg
       className={`skill-glyph${className ? ` ${className}` : ""}`}
+      style={{ color: colors[iconId] }}
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"

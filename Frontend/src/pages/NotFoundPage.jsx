@@ -11,7 +11,7 @@ export default function NotFoundPage() {
           title={<>Let’s find<br /><em>another way.</em></>}
           copy="That page doesn’t exist. Head back to the beginning and keep exploring."
         />
-        <Link className="button button--outline" to="/">Return home <ArrowIcon /></Link>
+        <Link className="button button--outline" to="/home">Return home <ArrowIcon /></Link>
       </div>
     </div>
   );

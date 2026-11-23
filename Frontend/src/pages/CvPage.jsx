@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { extendedCvUrl, onePageCvUrl } from "../data/portfolio.js";
+import { mlCvUrl, academicCvUrl, onePageCvUrl } from "../data/portfolio.js";
 import { ArrowIcon, DocumentIcon, PageIntro } from "../components/shared.jsx";
 
 const cvOptions = [
-  { id: "one-page", label: "One-page CV", url: onePageCvUrl },
-  { id: "extended", label: "Extended CV", url: extendedCvUrl },
+  { id: "ml", label: "Machine Learning CV", description: "For machine learning roles", url: mlCvUrl },
+  { id: "academic", label: "Academic CV", description: "For international academic applications", url: academicCvUrl },
+  { id: "one-page", label: "One-page CV", description: "A two-column overview", url: onePageCvUrl },
 ];
 
 export default function CvPage() {
@@ -78,18 +79,14 @@ export default function CvPage() {
           )}
         </section>
         <section className="cv-list">
-          <a className="cv-item" href={onePageCvUrl} download="Ahsan-Habib-Kushal-One-Page-CV.pdf">
-            <span className="cv-item__index">01</span>
-            <DocumentIcon />
-            <span className="cv-item__copy"><strong>One-page CV</strong><span>A concise overview · PDF</span></span>
-            <span className="cv-item__action">Download <ArrowIcon diagonal /></span>
-          </a>
-          <a className="cv-item" href={extendedCvUrl} download="Ahsan-Habib-Kushal-Extended-CV.pdf">
-            <span className="cv-item__index">02</span>
-            <DocumentIcon />
-            <span className="cv-item__copy"><strong>Extended CV</strong><span>Full academic and project details · PDF</span></span>
-            <span className="cv-item__action">Download <ArrowIcon diagonal /></span>
-          </a>
+          {cvOptions.map((option, index) => (
+            <a className="cv-item" key={option.id} href={option.url} download={`Ahsan-Habib-Kushal-${option.id}-CV.pdf`}>
+              <span className="cv-item__index">{String(index + 1).padStart(2, "0")}</span>
+              <DocumentIcon />
+              <span className="cv-item__copy"><strong>{option.label}</strong><span>{option.description}</span></span>
+              <span className="cv-item__action">Download <ArrowIcon diagonal /></span>
+            </a>
+          ))}
         </section>
         <section className="cv-aside">
           <span className="cv-aside__mark" aria-hidden="true">CV</span>

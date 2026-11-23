@@ -1,4 +1,5 @@
-import extendedCvUrl from "../../CV/Kushal_Multipager.pdf?url";
+import mlCvUrl from "../../CV/H_M_AHSAN_HABIB_KUSHAL_ML.pdf?url";
+import academicCvUrl from "../../CV/Academic_Ahsan_Habib.pdf?url";
 import onePageCvUrl from "../../CV/onepager.pdf?url";
 import portraitUrl from "../../Photo/kushal.jpg";
 import pytorchCertificateUrl from "../../Certifications/PyTorch Deep Learning Prof Cert.png";
@@ -604,4 +605,4 @@ export const pageVariants = {
   },
 };
 
-export { extendedCvUrl, onePageCvUrl, portraitUrl };
+export { mlCvUrl, academicCvUrl, onePageCvUrl, portraitUrl };

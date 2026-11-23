@@ -1,0 +1,113 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype,needspace}
+\usepackage[margin=0.72in]{geometry}
+\usepackage{titlesec,enumitem}
+\usepackage[hidelinks]{hyperref}
+\ifdefined\pdfgentounicode
+  \IfFileExists{glyphtounicode.tex}{\input{glyphtounicode}}{}
+  \pdfgentounicode=1
+\fi
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\raggedright\raggedbottom
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{11pt}{5pt}
+\newcommand{\cvheading}[2]{\Needspace{4\baselineskip}\noindent\textbf{#1}\hfill\textit{#2}\par\nopagebreak}
+\newcommand{\cvsubline}[1]{{\small\textit{#1}}\par\nopagebreak}
+\newenvironment{cvitems}{\begin{itemize}[leftmargin=0.21in,topsep=2pt,itemsep=1pt,parsep=0pt,partopsep=0pt]}{\end{itemize}}
+\urlstyle{same}
+\begin{document}
+\begin{center}
+{\Large\bfseries H M AHSAN HABIB KUSHAL}\\[4pt]
+Savar, Dhaka, Bangladesh \enspace|\enspace +880 1712-211284 \enspace|\enspace \href{mailto:kushalahsan@gmail.com}{kushalahsan@gmail.com}\\[3pt]
+\href{https://github.com/AhsanCS64}{GitHub: AhsanCS64} \enspace|\enspace
+\href{https://huggingface.co/Archmage64}{Hugging Face: Archmage64} \enspace|\enspace
+\href{https://ahsanhabibkushal.vercel.app/}{ahsanhabibkushal.vercel.app} \enspace|\enspace
+\href{https://www.linkedin.com/in/h-m-ahsan-habib-kushal-0263731a1/}{LinkedIn}
+\end{center}
+\section*{Professional Summary}
+ CSE undergraduate (CGPA 3.76/4.00, rank 2) building and deploying machine learning systems for Bangla text classification, explainable prediction, and personalized recommendation.
+\section*{Education}
+\textbf{National Institute of Textile Engineering and Research (NITER), University of Dhaka}\par
+B.Sc. in Computer Science and Engineering \hfill 2022 -- expected 2027\par
+HSC, Science (English Version), BAF Shaheen College Kurmitola \hfill GPA 5.00/5.00, 2021\par
+SSC, Science (English Version), Willes Little Flower School and College \hfill GPA 4.72/5.00, 2019
+\section*{Technical Skills}
+\textbf{Machine learning:} Python, PyTorch, Hugging Face Transformers, scikit-learn, XGBoost, SHAP, pandas, NumPy\par
+\textbf{Software and data:} SQL, PostgreSQL, FastAPI, React, TypeScript, Git
+\section*{Projects}
+\cvheading{HeadlineGuard BD -- Bangla Clickbait Detection\enspace{\small\normalfont\href{https://headlineguardbd.streamlit.app/}{\underline{Live demo}}}}{2026}
+\cvsubline{Python, PyTorch, BanglaBERT, Hugging Face, scikit-learn}
+\begin{cvitems}
+  \item Fine-tuned BanglaBERT on 10,839 headlines and compared it with four baselines.
+  \item Achieved \textbf{0.8032 macro F1} and 82.49\% accuracy on 1,205 validation headlines. Audited duplicate headlines across splits and reserved the test set for final evaluation.
+\end{cvitems}
+
+\cvheading{MindScope -- Explainable Student Survey Predictions\enspace{\small\normalfont\href{https://mind-scope-tau.vercel.app/}{\underline{Live demo}}}}{2026}
+\cvsubline{Python, FastAPI, React, TypeScript, XGBoost, SHAP}
+\begin{cvitems}
+  \item Deployed a five-model XGBoost ensemble to predict the depression label in OpenML student survey data.
+  \item Achieved \textbf{0.8714 ROC AUC} and 0.7857 macro F1 on 5,574 held-out records. Used SHAP to explain individual predictions.
+\end{cvitems}
+
+\cvheading{GameSense -- Steam Game Recommender\enspace{\small\normalfont\href{https://gamesense-v2.streamlit.app/}{\underline{Live demo}}}}{2026}
+\cvsubline{Python, PyTorch, Streamlit}
+\begin{cvitems}
+  \item Built a PyTorch matrix factorization recommender covering 993 games.
+  \item On 178 held-out users, achieved \textbf{0.3324 NDCG@10}, compared with 0.2128 for popularity and 0.3398 for item--item cosine similarity.
+\end{cvitems}
+
+\cvheading{CTRx -- Central Tenant Records\enspace{\small\normalfont\href{https://ctrx-chi.vercel.app/}{\underline{Live demo}}}}{2026}
+\cvsubline{Python, FastAPI, PostgreSQL, SQLAlchemy, React, TypeScript}
+\begin{cvitems}
+  \item Built a FastAPI application with a 30-table PostgreSQL schema for three roles: tenants, landlords, and administrators.
+  \item Implemented household identity verification, rental payment confirmation, and dispute tracking.
+\end{cvitems}
+
+\cvheading{KhamarBari -- Farm Management\enspace{\small\normalfont\href{https://khamar-bari-v2-rho.vercel.app/}{\underline{Live demo}}}}{2026}
+\cvsubline{MongoDB, Express.js, React, Node.js}
+\begin{cvitems}
+  \item Built a MERN application for three farm operations: livestock, poultry, and fisheries.
+  \item Integrated branch-level production records, orders, expenses, and production forecasting.
+\end{cvitems}
+
+\cvheading{CMRx -- Central Medical Records\enspace{\small\normalfont\href{https://cmrx.rf.gd/cmrx/Homepage.php}{\underline{Live demo}}}}{2025 -- present}
+\cvsubline{PHP, MySQL, HTML, CSS, JavaScript}
+\begin{cvitems}
+  \item Built a PHP/MySQL system for patient IDs, diagnoses, prescriptions, and vaccination records.
+\end{cvitems}
+
+\Needspace{8\baselineskip}
+\section*{Research}
+\cvheading{Medical Vision--Language Learning}{Nov 2026 -- present}
+\cvsubline{Supervisor: Shakila Shafiq, Lecturer, Department of Computer Science \& Engineering, NITER}
+\begin{cvitems}
+  \item Completed an initial \href{https://www.kaggle.com/code/hmashanhabibkushal/contrastive-learning-gloria/edit/run/372531517}{\underline{GLoRIA implementation on Kaggle}} to study how contrastive learning aligns chest X-rays with radiology reports, both across whole image--report pairs and between image regions and individual words.
+\end{cvitems}
+
+\section*{Leadership}
+\cvheading{Organizing Secretary, NITER Science Society}{Jun 2026 -- present}
+\begin{cvitems}
+  \item Organized four sessions and taught one session on \LaTeX.
+\end{cvitems}
+\cvheading{Deputy Treasurer, NITER Computer Club}{2025 -- present}
+\begin{cvitems}
+  \item Organized nine sessions and accounted for \textbf{BDT 53,000} in club funds.
+\end{cvitems}
+\cvheading{Senior Executive, NITER Computer Club}{2024 -- 2025}
+\begin{cvitems}
+  \item Volunteered at one club session.
+\end{cvitems}
+\section*{Competition Results}
+\textbf{4th of 46}, BAIC 2025, Senior Level, National AI Competition at BUBT.\par
+\textbf{5th of 40 teams}, NITER Innovate Hackathon 2026, organized by NITER Computer Club.
+\section*{Certifications}
+\begin{cvitems}
+  \item \textbf{PyTorch Professional Certificate} -- DeepLearning.AI (Oct 2026)
+  \item \textbf{Deep Learning Specialization} -- DeepLearning.AI (Sep 2026)
+  \item \textbf{Machine Learning Specialization} -- Stanford Online / DeepLearning.AI (Sep 2026)
+  \item \textbf{IBM Data Science Professional Certificate} -- IBM (Feb 2026)
+\end{cvitems}
+\end{document}

@@ -29,13 +29,13 @@ const profiles = [
 const chapters = [
   {
     title: "Research",
-    text: "I explore contrastive and self-supervised learning, with a current focus on how models connect chest X-rays to radiology reports. GLoRIA was my first hands-on implementation in medical vision-language learning.",
+    text: "Under the supervision of Shakila Shafiq, I explore contrastive and self-supervised learning, focusing on how models connect chest X-rays to radiology reports. My first medical vision-language implementation was GLoRIA.",
     to: "/research",
     link: "Explore my research journey",
   },
   {
     title: "Education",
-    text: "I study Computer Science and Engineering at NITER, affiliated with the University of Dhaka. I completed my SSC and HSC in the Science stream of Bangladesh’s English Version curriculum.",
+    text: "I studied in English Medium from Nursery through Standard 6, then switched to English Version from Standard 7 through HSC. I now study Computer Science and Engineering at NITER, affiliated with the University of Dhaka.",
     to: "/education",
     link: "Academic background",
   },

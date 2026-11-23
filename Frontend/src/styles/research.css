@@ -32,6 +32,21 @@
 .research-resources { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; margin-top: 1.2rem; }
 .research-resources a, .research-papers a { text-decoration: underline; text-underline-offset: .22em; }
 .research-resources a:hover { color: #c7dfad; }
+.research-supervisor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: #e6eee2;
+}
+.research-supervisor h2 { margin: 0 0 .45rem; font: 500 .84rem/1.5 var(--mono); text-transform: uppercase; }
+.research-supervisor p, .research-supervisor .research-resources { margin: 0; }
+.research-supervisor a:hover { color: var(--emerald); }
 .research-totals {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

@@ -61,6 +61,17 @@ export default function ResearchPage() {
             </div>
           </aside>
         </div>
+        <section className="research-supervisor" aria-labelledby="research-supervisor">
+          <div>
+            <h2 id="research-supervisor">Research supervisor</h2>
+            <p><strong>Shakila Shafiq</strong></p>
+            <p>Lecturer, Department of Computer Science &amp; Engineering, NITER</p>
+          </div>
+          <div className="research-resources">
+            <a href="https://niter.edu.bd/department/faculty/shakila-shafiq/" target="_blank" rel="noreferrer">Faculty profile</a>
+            <a href="https://www.linkedin.com/in/shakila-shafiq-4b591625a/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </section>
         <dl className="research-totals" aria-label="Reading progress">
           {totals.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}
         </dl>

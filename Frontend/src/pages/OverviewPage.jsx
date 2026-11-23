@@ -36,10 +36,15 @@ export default function OverviewPage() {
   return (
     <div className="overview-page page-wrap">
       <section className="overview-cover overview-cover--memorial" aria-labelledby="overview-name">
+        <figure className="overview-photo">
+          <img src={portraitUrl} width="1224" height="1228" alt="Portrait of H. M. Ahsan Habib Kushal" fetchPriority="high" />
+        </figure>
         <div className="overview-intro">
           <span className="overview-kicker">00 / Overview</span>
           <h1 id="overview-name">H. M. Ahsan <br />Habib <em>Kushal</em></h1>
           <p className="overview-role">Machine Learning Engineer · Software Developer · AI Research Enthusiast</p>
+        </div>
+        <div className="overview-summary">
           <div className="overview-bio">
             <p>I am a Computer Science and Engineering undergraduate at the National Institute of Textile Engineering and Research (NITER), University of Dhaka, passionate about transforming ideas into practical technology.</p>
             <p>My work lies at the intersection of Machine Learning, Deep Learning, Artificial Intelligence, and Software Engineering. I enjoy understanding how things work beneath the surface, experimenting with new approaches, and building complete applications that solve meaningful problems.</p>
@@ -48,9 +53,6 @@ export default function OverviewPage() {
             <Link to="/home">Enter Home <ArrowIcon /></Link>
           </div>
         </div>
-        <figure className="overview-photo">
-          <img src={portraitUrl} alt="Portrait of H M Ahsan Habib Kushal" fetchPriority="high" />
-        </figure>
       </section>
       <div className="overview-badges">
         <nav aria-label="Education and affiliations">

@@ -1,4 +1,7 @@
 const skillMarks = {
+  image: <><rect x="2" y="3" width="20" height="17" rx="3" fill="#e2f4fb" /><circle cx="8" cy="8" r="2" fill="#ffbc43" stroke="none" /><path d="m3 17 5-5 3 3 5-7 5 7v4H3z" fill="#30a789" /></>,
+  vision: <><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" fill="#e8e2fc" /><circle cx="12" cy="12" r="4" fill="#775bc0" /><circle cx="13" cy="11" r="1" fill="white" stroke="none" /></>,
+  contrastive: <><path d="m5 9 5-3m4 12 5-3" strokeWidth="2" /><g fill="#168b83"><circle cx="5" cy="9" r="2.6" /><circle cx="10" cy="6" r="2.6" /></g><g fill="#e77e35" stroke="#aa511c"><circle cx="14" cy="18" r="2.6" /><circle cx="19" cy="15" r="2.6" /></g></>,
   javascript: <><rect x="3" y="3" width="18" height="18" rx="3" /><path d="M12.5 16.5c.4.8 1.1 1.2 2.2 1.2 1.2 0 1.9-.5 1.9-1.4 0-.8-.5-1.2-1.8-1.7l-.7-.3c-1.8-.8-2.7-1.7-2.7-3.5 0-1.7 1.3-2.9 3.3-2.9 1.4 0 2.4.5 3.1 1.8M10 15.9c-.4 1.2-1.1 1.8-2.3 1.8-1 0-1.7-.5-2.2-1.3" /></>,
   react: <><ellipse cx="12" cy="12" rx="9" ry="3.5" /><ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(60 12 12)" /><ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(120 12 12)" /><circle cx="12" cy="12" r="1.5" /></>,
   node: <><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z" /><circle cx="12" cy="8" r="1.2" /><circle cx="8" cy="15.5" r="1.2" /><circle cx="16" cy="15.5" r="1.2" /><path d="m11.4 9-2.8 5.3m4-.3 2.8-5.3m-6.2 6.5h5.6" /></>,
@@ -40,6 +43,9 @@ const skillIconIds = {
   PyTorch: "pytorch",
   "TensorFlow / Keras": "tensorflow",
   CNNs: "cnn",
+  "Image Processing": "image",
+  "Computer Vision": "vision",
+  "Contrastive Learning": "contrastive",
   Transformers: "transformers",
   "Bangla NLP": "bangla",
   SQL: "sql",
@@ -58,6 +64,7 @@ const groupIconIds = {
 };
 
 const colors = {
+  image: "#276c84", vision: "#58458c", contrastive: "#18776d",
   javascript: "#977000", react: "#007d98", node: "#438239", express: "#364152",
   php: "#7064aa", rest: "#137e85", git: "#ce492f", python: "#36719c",
   sklearn: "#ad651a", xgboost: "#247ba0", features: "#8356ac", evaluation: "#17795c",

@@ -515,10 +515,10 @@ export const skillGroups = [
     skills: ["Python", "scikit-learn", "XGBoost", "Feature engineering", "Model evaluation"],
   },
   {
-    title: "Deep learning & NLP",
+    title: "Deep Learning, Image Processing & NLP",
     index: "03",
     icon: "neural",
-    skills: ["PyTorch", "TensorFlow / Keras", "CNNs", "Transformers", "Bangla NLP"],
+    skills: ["Image Processing", "Computer Vision", "Contrastive Learning", "PyTorch", "TensorFlow / Keras", "CNNs", "Transformers", "Bangla NLP"],
   },
   {
     title: "Data & databases",

@@ -69,3 +69,43 @@
   .overview-photo img { object-position: center 35%; }
 }
 
+.overview-badges { display: grid; gap: 16px; justify-items: center; padding: 28px 0 0; }
+.overview-badges nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; max-width: 850px; }
+.overview-badges a { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1px solid #bdcdbd; border-radius: 30px; background: #fafbf3; color: #254b38; font-size: .88rem; line-height: 1.4; }
+.overview-badges a:hover, .overview-badges a:focus-visible { background: #e3efdd; border-color: #64957a; }
+.overview-badges img, .overview-badges svg { width: 19px; height: 19px; flex: none; object-fit: contain; }
+.overview-cover--memorial {
+  --memorial-image: url("../../Photo/kushal2.jpg");
+  background-image: linear-gradient(90deg, #113d32 26%, rgba(9,42,34,.91) 45%, transparent 72%), var(--memorial-image);
+  background-size: 100% 100%, auto 100%;
+  background-position: center, right center;
+  background-repeat: no-repeat;
+}
+.overview-bio p { margin: 0; }
+.overview-bio p + p { margin-top: 1em; }
+.overview-cover--memorial .overview-photo {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  margin: clamp(26px, 4.7vw, 74px);
+  min-height: 0;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  border: 2px solid #e4ecdc;
+  border-radius: 50%;
+}
+.overview-cover--memorial .overview-intro {
+  grid-column: 1; grid-row: 1;
+  padding-top: calc(clamp(26px, 4.7vw, 74px) + 84px);
+}
+@media (max-width: 760px) {
+  .overview-cover--memorial {
+    padding-top: 54%;
+    background-color: #113d32;
+    background-image: linear-gradient(to bottom, transparent 42vw, #113d32 70vw), var(--memorial-image);
+    background-position: top center;
+    background-size: 100% 100%, 100% auto;
+    background-repeat: no-repeat;
+  }
+}

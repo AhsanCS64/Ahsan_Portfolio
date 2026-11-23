@@ -27,7 +27,12 @@ const profiles = [
 ];
 
 const chapters = [
-  { title: "Research", text: "I study how models learn from language and images. My work on Bangla clickbait detection led me toward contrastive learning and the question of how images and text can describe the same thing.", to: "/about", link: "Research interests" },
+  {
+    title: "Research",
+    text: "I explore contrastive and self-supervised learning, with a current focus on how models connect chest X-rays to radiology reports. GLoRIA was my first hands-on implementation in medical vision-language learning.",
+    to: "/research",
+    link: "Explore my research journey",
+  },
   { title: "Education", text: "I study Computer Science and Engineering at NITER, affiliated with the University of Dhaka. A favorite part of learning a new algorithm is working through an example by hand before writing the code.", to: "/education", link: "Academic background" },
   { title: "Projects", text: "My portfolio spans " + projects.length + " projects, from managing farm production in KhamarBari to explaining model predictions in MindScope. Each project has a demo you can explore.", to: "/work", link: "Explore the projects" },
 ];

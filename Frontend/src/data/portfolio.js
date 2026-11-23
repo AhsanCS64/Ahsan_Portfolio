@@ -12,6 +12,14 @@ import headlineguardLogo from "../../Photo/Projects/HeadlineguardBD/HeadlineGuar
 import gamesenseLandingImage from "../../Photo/Projects/GameSense/Landing Screen.png";
 import gamesenseSingleGameImage from "../../Photo/Projects/GameSense/Single Game Selected.png";
 import gamesenseMultipleGamesImage from "../../Photo/Projects/GameSense/Multiple Games Selected.png";
+import mindscopeLogo from "../../Photo/Projects/MindScope/mindscope-orbit.png";
+import mindscopeLandingImage from "../../Photo/Projects/MindScope/LandingPage.png";
+import mindscopeDatasetImage from "../../Photo/Projects/MindScope/DatasetExplorer.png";
+import mindscopeInferenceImage from "../../Photo/Projects/MindScope/Inference.png";
+import mindscopeExplainabilityImage from "../../Photo/Projects/MindScope/Explainabiliti.png";
+import mindscopeExplainabilityDetailImage from "../../Photo/Projects/MindScope/Explainabiliti2.png";
+import mindscopePerformanceImage from "../../Photo/Projects/MindScope/ModelPerformance.png";
+import mindscopeMethodImage from "../../Photo/Projects/MindScope/Method.png";
 import khamarbariHomeImage from "../../Photo/Projects/Khamarbari_home.png";
 import khamarbariDashboardImage from "../../Photo/Projects/khamarbari_dashboard.png";
 import khamarbariAnimalManagementImage from "../../Photo/Projects/Khamarbari_AnimalManagement.png";
@@ -276,6 +284,69 @@ export const projects = [
     linkLabel: "Live demo",
     repo: "https://github.com/AhsanCS64/GameSenseV2",
     kind: "recommender",
+  },
+  {
+    number: "06",
+    type: "Machine learning · Explainable AI",
+    name: "MindScope",
+    logo: mindscopeLogo,
+    summary:
+      "An interactive research and education app for exploring student mental health survey data. An ensemble of five XGBoost models predicts the depression label recorded in the OpenML Student Depression dataset.",
+    details: [
+      "Interactive dataset explorer for examining survey patterns",
+      "Model predictions for hypothetical student profiles",
+      "SHAP visualizations showing which inputs raise or lower a model prediction",
+      "Held-out model evaluation and documented methodology",
+    ],
+    gallery: [
+      {
+        image: mindscopeLandingImage,
+        alt: "MindScope landing page introducing the student mental health data explorer",
+        title: "Exploring student mental health survey data",
+        explanation: "The landing page introduces the dataset, the prediction demo, and the model evaluation tools.",
+      },
+      {
+        image: mindscopeDatasetImage,
+        alt: "MindScope dataset explorer displaying student survey data",
+        title: "Dataset explorer",
+        explanation: "Interactive charts let users examine patterns in the student survey responses.",
+      },
+      {
+        image: mindscopeInferenceImage,
+        alt: "MindScope prediction interface for entering a hypothetical student profile",
+        title: "Hypothetical profile predictions",
+        explanation: "Users can enter a sample profile and see how the ensemble predicts the dataset's recorded label.",
+      },
+      {
+        image: mindscopeExplainabilityImage,
+        alt: "MindScope explainability page showing SHAP results",
+        title: "Model explainability",
+        explanation: "SHAP visualizations show how the model uses survey inputs.",
+      },
+      {
+        image: mindscopeExplainabilityDetailImage,
+        alt: "Additional SHAP visualization on the MindScope explainability page",
+        title: "Feature contributions in detail",
+        explanation: "The detailed view shows which inputs push a prediction higher or lower and by how much.",
+      },
+      {
+        image: mindscopePerformanceImage,
+        alt: "MindScope model performance page displaying evaluation results",
+        title: "Held-out model performance",
+        explanation: "The evaluation page reports how the ensemble performed on held-out survey data.",
+      },
+      {
+        image: mindscopeMethodImage,
+        alt: "MindScope methodology page describing the research workflow",
+        title: "Research methodology",
+        explanation: "The methodology page documents the workflow from data preparation through model evaluation.",
+      },
+    ],
+    stack: ["React", "TypeScript", "Python", "FastAPI", "XGBoost", "SHAP"],
+    href: "https://mind-scope-tau.vercel.app/",
+    linkLabel: "Live demo",
+    repo: "https://github.com/AhsanCS64/MindScope",
+    kind: "research",
   },
 ];
 

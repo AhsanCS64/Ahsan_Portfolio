@@ -581,6 +581,7 @@ export const navItems = [
   { to: "/about", label: "About" },
   { to: "/education", label: "Education" },
   { to: "/learning", label: "Learning" },
+  { to: "/research", label: "Research" },
   { to: "/cv", label: "CV" },
   { to: "/achievements", label: "Achievements" },
   { to: "/eca", label: "ECA" },

@@ -35,7 +35,7 @@ const chapters = [
   },
   {
     title: "Education",
-    text: "I studied in English Medium from Nursery through Standard 6, then switched to English Version from Standard 7 through HSC. I now study Computer Science and Engineering at NITER, affiliated with the University of Dhaka.",
+    text: "I studied in English Medium from Nursery through Standard 6, then switched to English Version from Class 7 through HSC. I now study Computer Science and Engineering at NITER, affiliated with the University of Dhaka.",
     to: "/education",
     link: "Academic background",
   },

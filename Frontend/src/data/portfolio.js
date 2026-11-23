@@ -455,7 +455,7 @@ export const educationHistory = [
     logo: willesLogo,
     photo: willesPhoto,
     result: "GPA 4.72",
-    period: "Standard 7 – S.S.C (2019)",
+    period: "Class 7 - S.S.C (2019)",
     location: "Dhaka, Bangladesh",
     notes: [
       "Transitioned from English Medium to the English Version stream of the same institution.",

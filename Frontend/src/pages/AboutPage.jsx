@@ -8,7 +8,7 @@ import SkillIcon from "../components/SkillIcon.jsx";
 const researchAreas = [
   { number: "01", kind: "network", title: "Intelligent systems", detail: "Machine learning · deep learning · AI engineering" },
   { number: "02", kind: "language", title: "Language & meaning", detail: "Natural language processing · Bangla NLP · transformers" },
-  { number: "03", kind: "vision", title: "Seeing & sensing", detail: "Computer vision · signal processing · multimodal learning" },
+  { number: "03", kind: "vision", title: "Seeing & sensing", detail: "Image processing · computer vision · signal processing · multimodal learning" },
   { number: "04", kind: "layers", title: "Learning to learn", detail: "Representation learning · contrastive learning · robust evaluation" },
 ];
 
@@ -58,11 +58,10 @@ export default function AboutPage() {
               (NITER), affiliated with the University of Dhaka.
             </p>
             <p>
-              I enjoy understanding the ideas beneath the tools: exploring a
-              technical challenge, trying different approaches, and turning
-              what I learn into something useful. My work moves between
-              full-stack development, machine-learning experiments, and the
-              foundations of research.
+              I build full-stack applications and explore deep learning, image
+              processing, and natural language processing (NLP). In HeadlineGuard
+              BD, I compared how a character-based model and BanglaBERT detect
+              clickbait in Bangla headlines.
             </p>
             <p>
               Meaningful growth, to me, comes from building, experimenting,

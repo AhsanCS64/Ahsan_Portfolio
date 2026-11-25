@@ -18,7 +18,7 @@ const affiliations = [
 ];
 
 const profiles = [
-  ["LinkedIn", "linkedin", "https://www.linkedin.com/in/h-m-ahsan-habib-kushal-0263731a1/"],
+  ["LinkedIn", "linkedin", "https://www.linkedin.com/in/ahsanhabibkushal/"],
   ["GitHub", "github", "https://github.com/AhsanCS64"],
   ["ResearchGate", "researchgate", "https://www.researchgate.net/profile/H-M-Kushal"],
   ["Hugging Face", "huggingface", "https://huggingface.co/Archmage64"],

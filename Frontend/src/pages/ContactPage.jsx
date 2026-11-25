@@ -22,7 +22,7 @@ const contactMethods = [
   {
     label: "LinkedIn",
     value: "Connect professionally",
-    href: "https://www.linkedin.com/in/h-m-ahsan-habib-kushal-0263731a1/",
+    href: "https://www.linkedin.com/in/ahsanhabibkushal/",
     detail: "Academic and professional conversations",
     icon: "linkedin",
   },

@@ -459,7 +459,7 @@ export const projects = [
         explanation: "The final plan lists substituted ingredients and the adjusted cooking method.",
       },
     ],
-    stack: ["Python", "Streamlit", "pandas", "scikit-learn"],
+    stack: ["Python", "Streamlit", "pandas", "scikit-learn", "MiniLM-L6-v3"],
     href: "https://scarlet-dish.streamlit.app/",
     linkLabel: "Live demo",
     repo: "https://github.com/AhsanCS64/Scarlet-Dish",

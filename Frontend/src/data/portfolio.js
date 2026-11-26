@@ -51,6 +51,9 @@ import willesPhoto from "../../Photo/institutions/willes-little-flower-school-lo
 import bafskPhoto from "../../Photo/institutions/BAFSK.webp";
 import niterPhoto from "../../Photo/institutions/niter.png";
 
+import detectiveRiceLogo from "../../Photo/Projects/Detective Rice/Golden rice detective icon.png";
+import detectiveRiceInferenceImage from "../../Photo/Projects/Detective Rice/Inference.png";
+
 export const projects = [
   {
     number: "01",
@@ -347,6 +350,31 @@ export const projects = [
     href: "https://mind-scope-tau.vercel.app/",
     linkLabel: "Live demo",
     repo: "https://github.com/AhsanCS64/MindScope",
+    kind: "research",
+  },
+  {
+    number: "07",
+    type: "Deep learning · Computer vision",
+    name: "Detective Rice!",
+    logo: detectiveRiceLogo,
+    summary:
+      "A computer vision app that identifies Bangladeshi rice varieties from a close-up photo of a single uncooked grain.",
+    details: [
+      "Streamlit interface for uploading photos or trying sample images",
+      "Top three predicted varieties with confidence scores",
+      "Preview of the 224 × 224 image passed to the classifier",
+    ],
+    gallery: [
+      {
+        image: detectiveRiceInferenceImage,
+        alt: "Detective Rice interface showing a sample grain and ranked variety predictions",
+        title: "Rice variety predictions",
+        explanation: "The result shows the selected grain alongside the model's three highest-scoring varieties.",
+      },
+    ],
+    stack: ["Python", "PyTorch", "Streamlit"],
+    href: "https://www.kaggle.com/code/hmashanhabibkushal/detective-rice/output?scriptVersionId=374163214",
+    linkLabel: "Kaggle notebook",
     kind: "research",
   },
 ];

@@ -54,6 +54,17 @@ import niterPhoto from "../../Photo/institutions/niter.png";
 import detectiveRiceLogo from "../../Photo/Projects/Detective Rice/Golden rice detective icon.png";
 import detectiveRiceInferenceImage from "../../Photo/Projects/Detective Rice/Inference.png";
 
+import scarletDishLogo from "../../Photo/Projects/Scarlet Dish/Scarlet Steam Bowl Emblem.png";
+import scarletDishHomeImage from "../../Photo/Projects/Scarlet Dish/00-Scarlet-Dish.jpg";
+import scarletDishPantryImage from "../../Photo/Projects/Scarlet Dish/01-Pantry.jpg";
+import scarletDishPantryResultsImage from "../../Photo/Projects/Scarlet Dish/02-Pantry-Results.jpg";
+import scarletDishSimilarDishesImage from "../../Photo/Projects/Scarlet Dish/03-Similar-Dishes.jpg";
+import scarletDishSimilarResultsImage from "../../Photo/Projects/Scarlet Dish/04-Similar-Dishes-Results.jpg";
+import scarletDishTargetCuisinesImage from "../../Photo/Projects/Scarlet Dish/05-Target-Cuisines.jpg";
+import scarletDishAdaptImage from "../../Photo/Projects/Scarlet Dish/06-Adapt-a-Dish.jpg";
+import scarletDishKoreanShakshukaImage from "../../Photo/Projects/Scarlet Dish/07-Korean-Inspired-Shakshuka.jpg";
+import scarletDishAdaptedMethodImage from "../../Photo/Projects/Scarlet Dish/08-Adapted-Ingredients-and-Method.jpg";
+
 export const projects = [
   {
     number: "01",
@@ -377,6 +388,82 @@ export const projects = [
     linkLabel: "Live demo",
     repo: "https://github.com/AhsanCS64/GameSenseV2",
     kind: "recommender",
+  },
+
+  {
+    number: "08",
+    type: "Machine learning · Recipe recommender",
+    name: "Scarlet Dish",
+    logo: scarletDishLogo,
+    summary:
+      "A recipe discovery app that recommends dishes from nearly 10,000 South Asian recipes using the ingredients you have on hand and Bangladesh's seasons. It also surfaces similar recipes and builds cross-cuisine adaptation plans that preserve a dish's defining elements.",
+    details: [
+      "Ingredient-to-dish recommendation across roughly 10,000 South Asian recipes",
+      "Season-aware filtering tuned to Bangladesh's growing calendar",
+      "Similar-recipe discovery with ranked matches",
+      "Cross-cuisine adaptation plans that keep each dish's defining flavors intact",
+    ],
+    gallery: [
+      {
+        image: scarletDishHomeImage,
+        alt: "Scarlet Dish recipe discovery home screen",
+        title: "Recipe discovery",
+        explanation: "The entry point to browsing and searching the South Asian recipe collection.",
+      },
+      {
+        image: scarletDishPantryImage,
+        alt: "Scarlet Dish pantry ingredient selection",
+        title: "Pantry input",
+        explanation: "Users select the ingredients they have available to ground the recommendations in what's on hand.",
+      },
+      {
+        image: scarletDishPantryResultsImage,
+        alt: "Scarlet Dish pantry-to-plate results",
+        title: "Pantry-to-plate results",
+        explanation: "Dishes are ranked by how well they match the supplied ingredients and the current season.",
+      },
+      {
+        image: scarletDishSimilarDishesImage,
+        alt: "Scarlet Dish similar-recipe browser",
+        title: "Similar dishes",
+        explanation: "Recipes with overlapping ingredients and technique are surfaced alongside each dish.",
+      },
+      {
+        image: scarletDishSimilarResultsImage,
+        alt: "Scarlet Dish similar recipe matches",
+        title: "Similar recipe matches",
+        explanation: "Ranked alternatives let users explore variations on a dish they already like.",
+      },
+      {
+        image: scarletDishTargetCuisinesImage,
+        alt: "Scarlet Dish target cuisine selection",
+        title: "Target cuisines",
+        explanation: "A cuisine target guides cross-cuisine adaptation toward a chosen flavor profile.",
+      },
+      {
+        image: scarletDishAdaptImage,
+        alt: "Scarlet Dish adapt-a-dish setup",
+        title: "Adapt a dish",
+        explanation: "The adaptation workflow pairs a source recipe with a target cuisine.",
+      },
+      {
+        image: scarletDishKoreanShakshukaImage,
+        alt: "Scarlet Dish Korean-inspired shakshuka adaptation",
+        title: "Korean-inspired shakshuka",
+        explanation: "A sample cross-cuisine adaptation showing how a dish travels across flavor traditions.",
+      },
+      {
+        image: scarletDishAdaptedMethodImage,
+        alt: "Scarlet Dish adapted ingredients and method",
+        title: "Adapted ingredients & method",
+        explanation: "The final plan lists substituted ingredients and the adjusted cooking method.",
+      },
+    ],
+    stack: ["Python", "Streamlit", "pandas", "scikit-learn"],
+    href: "https://scarlet-dish.streamlit.app/",
+    linkLabel: "Live demo",
+    repo: "https://github.com/AhsanCS64/Scarlet-Dish",
+    kind: "recipe",
   },
 ];
 

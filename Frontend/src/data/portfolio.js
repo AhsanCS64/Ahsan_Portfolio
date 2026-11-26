@@ -373,8 +373,9 @@ export const projects = [
       },
     ],
     stack: ["Python", "PyTorch", "Streamlit"],
-    href: "https://www.kaggle.com/code/hmashanhabibkushal/detective-rice/output?scriptVersionId=374163214",
-    linkLabel: "Kaggle notebook",
+    href: "https://detective-rice.streamlit.app/",
+    linkLabel: "Live demo",
+    repo: "https://github.com/AhsanCS64/Detective-Rice",
     kind: "research",
   },
 ];

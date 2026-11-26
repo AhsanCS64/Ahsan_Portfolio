@@ -250,44 +250,29 @@ export const projects = [
 
   {
     number: "05",
-    type: "Machine learning · Recommender system",
-    name: "GameSense",
+    type: "Deep learning · Computer vision",
+    name: "Detective Rice!",
+    logo: detectiveRiceLogo,
     summary:
-      "A personalized Steam game recommendation app that learns your taste from the games you list and provides explainable suggestions.",
+      "A computer vision app that identifies Bangladeshi rice varieties from a close-up photo of a single uncooked grain.",
     details: [
-      "History-based matrix factorization trained in PyTorch on the real Steam dataset",
-      "Explainable recommendations with 'Because you liked <game>' justifications",
-      "Forgiving title search with exact, whole-word, and fuzzy matching over 993 games",
-      "Instant NumPy inference with cold-start taste vector generation without retraining",
+      "Streamlit interface for uploading photos or trying sample images",
+      "Top three predicted varieties with confidence scores",
+      "Preview of the 224 × 224 image passed to the classifier",
     ],
     gallery: [
       {
-        image: gamesenseLandingImage,
-        alt: "GameSense personalized Steam game recommender landing screen",
-        title: "Personalized game discovery",
-        explanation:
-          "The interactive Streamlit interface lets users search, multiselect games, use quick-start picks, or hit 'Surprise me' across a catalog of 993 Steam titles.",
-      },
-      {
-        image: gamesenseSingleGameImage,
-        alt: "GameSense single game recommendation results with explanations",
-        title: "Taste vector generation & explanation",
-        explanation:
-          "Selecting a game constructs an instant taste vector, returning ranked recommendations paired with player counts and explainable 'Because you liked' attribution.",
-      },
-      {
-        image: gamesenseMultipleGamesImage,
-        alt: "GameSense multiple games taste modeling and ranked recommendations",
-        title: "Multi-game taste aggregation",
-        explanation:
-          "Combining preferences across multiple titles refines the latent taste representation, generating cohesive multi-game recommendations with CSV export and theme switching.",
+        image: detectiveRiceInferenceImage,
+        alt: "Detective Rice interface showing a sample grain and ranked variety predictions",
+        title: "Rice variety predictions",
+        explanation: "The result shows the selected grain alongside the model's three highest-scoring varieties.",
       },
     ],
-    stack: ["Python", "PyTorch", "NumPy", "pandas", "Streamlit", "pytest"],
-    href: "https://gamesense-v2.streamlit.app/",
+    stack: ["Python", "PyTorch", "Streamlit"],
+    href: "https://detective-rice.streamlit.app/",
     linkLabel: "Live demo",
-    repo: "https://github.com/AhsanCS64/GameSenseV2",
-    kind: "recommender",
+    repo: "https://github.com/AhsanCS64/Detective-Rice",
+    kind: "research",
   },
   {
     number: "06",
@@ -354,29 +339,44 @@ export const projects = [
   },
   {
     number: "07",
-    type: "Deep learning · Computer vision",
-    name: "Detective Rice!",
-    logo: detectiveRiceLogo,
+    type: "Machine learning · Recommender system",
+    name: "GameSense",
     summary:
-      "A computer vision app that identifies Bangladeshi rice varieties from a close-up photo of a single uncooked grain.",
+      "A personalized Steam game recommendation app that learns your taste from the games you list and provides explainable suggestions.",
     details: [
-      "Streamlit interface for uploading photos or trying sample images",
-      "Top three predicted varieties with confidence scores",
-      "Preview of the 224 × 224 image passed to the classifier",
+      "History-based matrix factorization trained in PyTorch on the real Steam dataset",
+      "Explainable recommendations with 'Because you liked <game>' justifications",
+      "Forgiving title search with exact, whole-word, and fuzzy matching over 993 games",
+      "Instant NumPy inference with cold-start taste vector generation without retraining",
     ],
     gallery: [
       {
-        image: detectiveRiceInferenceImage,
-        alt: "Detective Rice interface showing a sample grain and ranked variety predictions",
-        title: "Rice variety predictions",
-        explanation: "The result shows the selected grain alongside the model's three highest-scoring varieties.",
+        image: gamesenseLandingImage,
+        alt: "GameSense personalized Steam game recommender landing screen",
+        title: "Personalized game discovery",
+        explanation:
+          "The interactive Streamlit interface lets users search, multiselect games, use quick-start picks, or hit 'Surprise me' across a catalog of 993 Steam titles.",
+      },
+      {
+        image: gamesenseSingleGameImage,
+        alt: "GameSense single game recommendation results with explanations",
+        title: "Taste vector generation & explanation",
+        explanation:
+          "Selecting a game constructs an instant taste vector, returning ranked recommendations paired with player counts and explainable 'Because you liked' attribution.",
+      },
+      {
+        image: gamesenseMultipleGamesImage,
+        alt: "GameSense multiple games taste modeling and ranked recommendations",
+        title: "Multi-game taste aggregation",
+        explanation:
+          "Combining preferences across multiple titles refines the latent taste representation, generating cohesive multi-game recommendations with CSV export and theme switching.",
       },
     ],
-    stack: ["Python", "PyTorch", "Streamlit"],
-    href: "https://detective-rice.streamlit.app/",
+    stack: ["Python", "PyTorch", "NumPy", "pandas", "Streamlit", "pytest"],
+    href: "https://gamesense-v2.streamlit.app/",
     linkLabel: "Live demo",
-    repo: "https://github.com/AhsanCS64/Detective-Rice",
-    kind: "research",
+    repo: "https://github.com/AhsanCS64/GameSenseV2",
+    kind: "recommender",
   },
 ];
 

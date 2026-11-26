@@ -279,7 +279,7 @@ export const projects = [
         explanation: "The result shows the selected grain alongside the model's three highest-scoring varieties.",
       },
     ],
-    stack: ["Python", "PyTorch", "Streamlit"],
+    stack: ["Python", "PyTorch", "Computer Vision", "Image Processing", "EfficientNet_B0", "Streamlit"],
     href: "https://detective-rice.streamlit.app/",
     linkLabel: "Live demo",
     repo: "https://github.com/AhsanCS64/Detective-Rice",
